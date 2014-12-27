@@ -199,8 +199,8 @@
       <div layout="row" layout-align="space-between center" style="width: 74vw;">
         <md-button style="background-color: #7986CB; color: white; margin-left: 1vw;" class="md-raised" ng-click="exportData()"><span class="glyphicon glyphicon-export"></span> Export Data</md-button>
 
-        <div style="text-align: center">
-          <ul id="paginatorList" class="pagination">
+        <div style="text-align: center;">
+          <ul style="visibility: hidden;" id="paginatorList" class="pagination">
             <li><a>1</a></li>
             <li><a>2</a></li>
             <li><a>3</a></li>
@@ -230,7 +230,7 @@
               <th tdLink="descriptor">Complaint Description<md-tooltip>Click To Sort</md-tooltip></th>
               <th tdLink="incident_address">Incident Address<md-tooltip>Click To Sort</md-tooltip></th>
               <th tdLink="borough">Borough<md-tooltip>Click To Sort</md-tooltip></th>
-              <th tdLink="incident_zip">Incident Zip<md-tooltip>Click To Sort</md-tooltip></th>
+              <th style="text-align: center;" tdLink="incident_zip">Incident Zip<md-tooltip>Click To Sort</md-tooltip></th>
               <th tdLink="community_board">Community Board<md-tooltip>Click To Sort</md-tooltip></th>
               <th tdLink="status">Status<md-tooltip>Click To Sort</md-tooltip></th>
             </tr>
@@ -245,7 +245,7 @@
               <td>{{row.descriptor}}</td>
               <td>{{row.incidentAddress}}</td>
               <td>{{row.borough}}</td>
-              <td>{{row.incidentZip}}</td>
+              <td style="text-align: center;">{{row.incidentZip}}</td>
               <td>{{row.communityBoard}}</td>
               <td>{{row.status}}</td>
             </tr>

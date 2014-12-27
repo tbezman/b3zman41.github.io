@@ -107,6 +107,8 @@ angular.module("nycOpen", ["ngMaterial"]).controller("appController", ["$scope",
 
     //For the filter button click
     $scope.filterQuery = function () {
+        $("#paginatorList").css({visibility: "visible"});
+
         $scope.page = 1;
         $scope.resetPagination();
 
