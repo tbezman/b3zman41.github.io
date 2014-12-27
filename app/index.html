@@ -2,19 +2,19 @@
 <head>
 
 
-  <script src="/resources/jquery-2.1.1.js"></script>
+  <script src="/scripts/jquery-2.1.1.js"></script>
 
   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
 
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/resources/bower_components/angular-material/angular-material.min.css">
-  <link rel="stylesheet" href="/resources/daterangepicker-bs3.css">
+  <link rel="stylesheet" href="/bower_components/angular-material/angular-material.min.css">
+  <link rel="stylesheet" href="/styles/daterangepicker-bs3.css">
 
-  <link rel="stylesheet" href="/resources/bower_components/angular-material/themes/indigo-theme.css">
+  <link rel="stylesheet" href="/bower_components/angular-material/themes/indigo-theme.css">
 
-  <link rel="shortcut icon" href="/resources/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="/resources/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
   <link rel="stylesheet" href="//cdn.datatables.net/1.10.4/css/jquery.dataTables.min.css">
 
@@ -23,20 +23,20 @@
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
-  <script src="/resources/bower_components/angular/angular.js"></script>
-  <script src="/resources/bower_components/angular-aria/angular-aria.js"></script>
-  <script src="/resources/bower_components/angular-animate/angular-animate.js"></script>
-  <script src="/resources/bower_components/hammerjs/hammer.js"></script>
-  <script src="/resources/bower_components/angular-material/angular-material.js"></script>
+  <script src="/bower_components/angular/angular.js"></script>
+  <script src="/bower_components/angular-aria/angular-aria.js"></script>
+  <script src="/bower_components/angular-animate/angular-animate.js"></script>
+  <script src="/bower_components/hammerjs/hammer.js"></script>
+  <script src="/bower_components/angular-material/angular-material.js"></script>
 
   <script src="//cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>
 
-  <script src="/resources/moment.js"></script>
-  <script src="/resources/daterangepicker.js"></script>
+  <script src="/scripts/moment.js"></script>
+  <script src="/scripts/daterangepicker.js"></script>
 
-  <script src="/resources/bower_components/angular-date-range-picker/build/angular-date-range-picker.js"></script>
+  <script src="/bower_components/angular-date-range-picker/build/angular-date-range-picker.js"></script>
 
-  <script src="/resources/appController.js"></script>
+  <script src="/scripts/appController.js"></script>
 
   <style>
 
@@ -107,7 +107,7 @@
 
       <md-toolbar class="md-whiteframe-z2" style="margin-bottom: -3%; background-color: #3949AB" layout="row" layout-align="space-between center" layout-align="center">
         <span flex="74" style="padding-left: 1vw; font-size: 3vh;" >SEARCH</span>
-        <span flex="25" ng-if="dataLength" class="md-whiteframe-z1" layout="column" layout-align="space-around" style="height: 45px; text-align: center; border-radius: 3px; background-color: rgb(87, 101, 187); margin-right: 2%;">
+        <span flex="25" ng-if="dataLength" class="md-whiteframe-z1" layout="column" layout-align="space-around" style="height: 45px; text-align: center; border-radius: 3px; background-color: #E81D62; margin-right: 2%;">
           {{dataLength}}
         </span>
       </md-toolbar>
@@ -201,16 +201,6 @@
 
         <div style="text-align: center;">
           <ul style="visibility: hidden;" id="paginatorList" class="pagination">
-            <li><a>1</a></li>
-            <li><a>2</a></li>
-            <li><a>3</a></li>
-            <li><a>4</a></li>
-            <li><a>5</a></li>
-            <li><a>6</a></li>
-            <li><a>7</a></li>
-            <li><a>8</a></li>
-            <li><a>9</a></li>
-            <li><a>10</a></li>
           </ul>
         </div>
 
