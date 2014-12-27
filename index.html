@@ -102,7 +102,7 @@
     <div id="queryCard" flex="25" style="height: 75vh; margin-top: 2.5vh;">
 
       <md-toolbar class="md-whiteframe-z2" style="margin-bottom: -3%; background-color: #3949AB" layout="row" layout-align="space-between center" layout-align="center">
-        <span flex="74" style="padding-left: 1vw; font-size: 3vh;" >Search</span>
+        <span flex="74" style="padding-left: 1vw; font-size: 3vh;" >SEARCH</span>
         <span flex="25" ng-if="dataLength" class="md-whiteframe-z1" layout="column" layout-align="space-around" style="height: 45px; text-align: center; border-radius: 3px; background-color: rgb(87, 101, 187); margin-right: 2%;">
           {{dataLength}}
         </span>
@@ -116,7 +116,7 @@
         </div>
 
         <div id="communityBoardTable" class="row boardTable">
-          <div flex="50" class="col-sm-6">
+          <div class="col-sm-4">
             <label class="control-label">Borough</label>
             <select class="form-control" ng-model="boroughSelect" ng-change="updateBoard()">
               <option value=""></option>
@@ -127,7 +127,7 @@
             </select>
           </div>
 
-          <div flex="50" class="col-sm-6">
+          <div class="col-sm-8">
             <label class="control-label">CB Number</label>
             <select class="form-control" ng-model="cbNumberSelect">
               <option value=""></option>
@@ -140,7 +140,7 @@
         </div>
 
         <div class="row boardTable">
-          <div class="col-sm-6">
+          <div class="col-sm-4">
             <td style="padding-left: 0;">
               <label class="control-label" style="margin-top: 0; font-size: 3vh; padding-left: 0;">Agency</label>
               <select class="form-control" style="padding-left: 0;" ng-model="agencySelect">
@@ -151,7 +151,7 @@
               </select>
           </div>
 
-          <div class="col-sm-6">
+          <div class="col-sm-8">
             <label class="control-label" style="margin-top: 0; font-size: 3vh; padding-left: 0">Complaint Type</label>
             <select class="form-control" style="padding-left: 0" ng-model="complaintTypeSelect">
               <option></option>
