@@ -1,0 +1,22 @@
+{
+  "name": "angular-date-range-picker",
+  "version": "0.4.15",
+  "authors": [
+    "Tymon Tobolski <tymon.tobolski@monterail.com>",
+    "Krzysztof Jung <krzysztof.jung@monterail.com>"
+  ],
+  "repository": "git://github.com/monterail/angular-date-range-picker.git",
+  "description": "Date Picker without jQuery",
+  "main": [
+    "build/angular-date-range-picker.js",
+    "build/angular-date-range-picker.css"
+  ],
+  "dependencies": {
+    "angular": "~1.2",
+    "angular-bindonce": "*",
+    "moment": "~2.6.0",
+    "moment-range": "~1.0.1"
+  },
+  "license": "MIT",
+  "homepage": "http://github.com/monterail/angular-date-range-picker"
+}
