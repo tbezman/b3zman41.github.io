@@ -40,6 +40,11 @@ var AUTOPREFIXER_BROWSERS = [
   'bb >= 10'
 ];
 
+gulp.task('allFiles', function(){
+    return gulp.src("app/**/*")
+    .pipe(gulp.dest("app/app/"));
+});
+
 // Lint JavaScript
 gulp.task('jshint', function () {
   return gulp.src('app/scripts/**/*.js')
@@ -152,10 +157,10 @@ gulp.task('serve', ['styles'], function () {
     server: ['.tmp', 'app']
   });
 
-  gulp.watch(['app/**/*.html'], reload);
+  gulp.watch(['app/**/*.html'], ["allFiles", reload]);
   gulp.watch(['app/styles/**/*.{scss,css}'], ['styles', reload]);
-  gulp.watch(['app/scripts/**/*.js'], ['jshint']);
-  gulp.watch(['app/images/**/*'], reload);
+  gulp.watch(['app/scripts/**/*.js'], ['jshint', 'allFiles', reload]);
+  gulp.watch(['app/images/**/*'], ["allFiles", reload]);
 });
 
 // Build and serve the output from the dist build
@@ -172,7 +177,7 @@ gulp.task('serve:dist', ['default'], function () {
 
 // Build Production Files, the Default Task
 gulp.task('default', ['clean'], function (cb) {
-  runSequence('styles', ['jshint', 'html', 'images', 'fonts', 'copy'], cb);
+  runSequence('styles', ['jshint', 'html', 'images', 'fonts', 'copy', 'allFiles'], cb);
 });
 
 // Run PageSpeed Insights
