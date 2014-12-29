@@ -215,7 +215,7 @@ angular.module("nycOpen", ["ngMaterial"]).controller("appController", ["$scope",
 
                 $(prevPage).click(function () {
                     if($scope.page > 1){
-                        $scope.page -= 1;
+                        $scope.page = parseInt($scope.page) - 1;
                         $scope.updateQuery();
                     }
                 });
@@ -231,7 +231,7 @@ angular.module("nycOpen", ["ngMaterial"]).controller("appController", ["$scope",
 
                 $(nextPage).click(function () {
                     if($scope.page < (Math.ceil($scope.dataLengthRaw / $scope.limit))){
-                        $scope.page += 1;
+                        $scope.page = parseInt($scope.page) + 1;
                         $scope.updateQuery();
                     }
                 });
@@ -262,7 +262,7 @@ angular.module("nycOpen", ["ngMaterial"]).controller("appController", ["$scope",
         $("#paginatorList li").each(function () {
             var i = $(this).find("a").html();
 
-            if(i === $scope.page){
+            if(i == $scope.page){
                 $(this).attr("class", "active");
             }
 
