@@ -208,7 +208,7 @@ angular.module("nycOpen", ["ngMaterial"]).controller("appController", ["$scope",
 
                 prevPage.className = "specialPage";
                 prevPage.id = "prevPage";
-                prevA.innerHTML = "<<";
+                prevA.className = "glyphicon glyphicon-chevron-left";
 
                 prevPage.appendChild(prevA);
 
@@ -225,7 +225,7 @@ angular.module("nycOpen", ["ngMaterial"]).controller("appController", ["$scope",
 
                 nextPage.className = "specialPage";
                 nextPage.id = "nextPage";
-                nextA.innerHTML = ">>";
+                nextA.className = "glyphicon glyphicon-chevron-right";
 
                 nextPage.appendChild(nextA);
 
