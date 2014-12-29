@@ -107,7 +107,6 @@
 
       <md-toolbar class="md-whiteframe-z2" style="margin-bottom: -3%; background-color: #3949AB" layout="row" layout-align="space-between center" layout-align="center">
       <span flex style="padding-left: 1vw; font-size: 3vh;" >SEARCH</span>
-      <span flex><md-button ng-click="clearFields()" class="md-raised" style="background-color: #7986CB"><span class="glyphicon glyphicon-trash"></span> Clear</md-button></span>
       <span flex class="md-whiteframe-z1" layout="column" layout-align="space-around" style="height: 45px; text-align: center; border-radius: 3px; background-color: #E81D62; margin-right: 2%;">
         {{dataLength}}
       </span>
@@ -178,8 +177,9 @@
         </option>
       </select>
 
-      <div layout="row" layout-align="center" style="margin-top: 3vh;">
+      <div layout="row" layout-align="space-around center" style="margin-top: 3vh;">
         <md-button style="background-color: #5C6BC0" class="md-raised md-primary" ng-click="filterQuery()"><span class="glyphicon glyphicon-filter"></span>Filter</md-button>
+        <md-button ng-click="clearFields()" class="md-raised md-warn"><span class="glyphicon glyphicon-trash"></span> Clear</md-button>
       </div>
 
 
