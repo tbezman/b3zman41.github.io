@@ -25,7 +25,7 @@ var end   = moment("2011-11-27", "YYYY-MM-DD");
 var range = moment().range(start, end);
 ```
 
-### Contains / Within / Overlaps / Intersect / Subtract
+### Contains / Within / Overlaps / Intersect / Add / Subtract
 
 Check to see if your range contains a date/moment:
 
@@ -33,13 +33,21 @@ Check to see if your range contains a date/moment:
 var start  = new Date(2012, 4, 1);
 var end    = new Date(2012, 4, 23);
 var lol    = new Date(2012, 4, 15);
-var wat    = new Date(2012, 2, 27);
+var wat    = new Date(2012, 4, 27);
 var range  = moment().range(start, end);
 var range2 = moment().range(lol, wat);
 
 range.contains(lol); // true
 range.contains(wat); // false
 ```
+A optional second parameter indicates if the end of the range
+should be excluded when testing for inclusion
+``` javascript
+range.contains(end) // true
+range.contains(end, false) // true
+range.contains(end, true) // false
+```
+
 
 Find out if your moment falls within a date range:
 
@@ -62,6 +70,15 @@ What are the intersecting ranges?
 
 ``` javascript
 range.intersect(range2); // [moment().range(lol, end)]
+```
+
+Add/combine/merge overlapping ranges.
+
+``` javascript
+range.add(range2); // [moment().range(start, wat)]
+
+var range3 = moment.range(new Date(2012, 3, 1), new Date(2012, 3, 15);
+range.add(range3); // [null]
 ```
 
 Subtracting one range from another.
@@ -99,6 +116,17 @@ range1.by(range2, function(moment) {
 });
 
 acc.length == 5 // true
+```
+
+Iteration also supports excluding the end value of the range by setting the
+last parameter to ```true```.
+``` javascript
+acc2 = [];
+range1.by('d', function (moment) {
+  acc2.push(moment)
+}, true);
+acc2.length == 4 // true
+
 ```
 
 ### Compare
@@ -158,6 +186,33 @@ var dr    = moment.range(start, end);
 dr.toDate(); // [new Date(2011, 2, 5), new Date(2011, 5, 5)]
 ```
 
+### Center
+
+Calculate the center of a range
+
+``` javascript
+var start = new Date(2011, 2, 5);
+var end   = new Date(2011, 3, 5);
+var dr    = moment.range(start, end);
+
+dr.center(); // 1300622400000
+```
+
+### Clone
+
+Deep clone a range
+
+``` javascript
+var start = new Date(2011, 2, 5);
+var end   = new Date(2011, 3, 5);
+var dr    = moment.range(start, end);
+
+var dr2 = dr.clone();
+dr2.start.add(2, 'days');
+
+dr2.start.toDate() === dr.start.toDate() // false
+```
+
 
 Installation
 ------------
@@ -172,6 +227,8 @@ Simply include moment-range after moment.js:
 ``` html
 <script src="/javascripts/moment-range.js"></script>
 ```
+
+Thanks to the fine people at [cdnjs][cdnjs], you can link to moment-range from the [cdnjs servers][cdnjs-moment-range].
 
 
 ### NPM
@@ -224,6 +281,8 @@ License
 
 moment-range is [UNLICENSED][unlicense].
 
+[cdnjs]: https://github.com/cdnjs/cdnjs
+[cdnjs-moment-range]: https://cdnjs.com/libraries/moment-range
 [moment]: http://momentjs.com/
 [node]: http://nodejs.org/
 [unlicense]: http://unlicense.org/

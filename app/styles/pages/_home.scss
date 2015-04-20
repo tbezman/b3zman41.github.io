@@ -1,0 +1,79 @@
+#loadingIcon {
+  display: none;
+}
+
+#mainTable {
+  th {
+    cursor: pointer;
+    font-size: 14px;
+    //vertical-align: middle;
+
+    text-transform: capitalize;
+
+    border: 2px solid #EEEEEE;
+
+    padding: 5px 5px 0 5px;
+
+    .sortDirection {
+      float: right;
+    }
+  }
+
+  overflow: scroll;
+}
+
+#tableCard {
+  overflow-y: scroll;
+}
+
+.searchCard {
+  margin-top: 10px;
+
+  height: calc(100% - 100px);
+}
+
+.pageHeader {
+  background-color: #1A237E !important;
+
+  > * {
+    margin-left: 20px;
+  }
+}
+
+.searchResultsLength {
+  background-color: #2095F2;
+  border-radius: 5px;
+  margin-right: 10px;
+
+  text-align: center;
+
+  padding: 10px;
+}
+
+.searchTitle {
+  margin-left: 10px;
+  font-size: 5vh;
+}
+
+.topButtons {
+  padding: 0px 10px;
+
+  > button {
+    background-color: #7986CB !important;
+    color: white !important;
+  }
+}
+
+.searchButtons {
+  font-size: 3vh;
+}
+
+.pagination {
+  margin: 0 !important;
+
+  cursor: pointer;
+}
+
+.centerText {
+  text-align: center;
+}

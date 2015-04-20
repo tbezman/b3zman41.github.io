@@ -1,6 +1,6 @@
 {
   "name": "moment-range",
-  "version": "1.0.5",
+  "version": "1.0.9",
   "main": "./lib/moment-range.js",
   "ignore": [
     "**/.*",
@@ -20,11 +20,11 @@
     "grunt-mocha-test": "~0.7.0"
   },
   "homepage": "https://github.com/gf3/moment-range",
-  "_release": "1.0.5",
+  "_release": "1.0.9",
   "_resolution": {
     "type": "version",
-    "tag": "v1.0.5",
-    "commit": "c4f6f49285af622fb0472b902a663b94e2b32331"
+    "tag": "1.0.9",
+    "commit": "0a41e96f99eee72a6f08a9d546b87acbb02255b4"
   },
   "_source": "git://github.com/gf3/moment-range.git",
   "_target": "~1.0.1",

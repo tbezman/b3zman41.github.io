@@ -9,7 +9,10 @@ describe 'Moment', ->
   m_end   = moment('2011-06-05', 'YYYY-MM-DD')
 
   describe '#range()', ->
-    it 'should return a DateRange'
+    it 'should return a DateRange with start & end properties', ->
+      dr = moment.range(m_1, m_2)
+      moment.isMoment(dr.start).should.be.true
+      moment.isMoment(dr.end).should.be.true
 
     it 'should support string units like `year`, `month`, `week`, `day`, `minute`, `second`, etc...', ->
       dr = m_1.range('year')
@@ -34,30 +37,32 @@ describe 'DateRange', ->
   m_2 = moment.utc('11-05-1996', 'MM-DD-YYYY')
   m_3 = moment.utc('08-12-1996', 'MM-DD-YYYY')
   m_4 = moment.utc('01-01-2012', 'MM-DD-YYYY')
-  s_start = '08-12-1996'
-  s_end = '01-01-2012'
+  s_start = '1996-08-12T00:00:00.000Z'
+  s_end   = '2012-01-01T00:00:00.000Z'
 
   describe 'constructor', ->
     it 'should allow initialization with date string', ->
       dr = moment.range(s_start, s_end)
       moment.isMoment(dr.start).should.be.true
       moment.isMoment(dr.end).should.be.true
-      dr.start.should.equal moment(s_start)
-      dr.end.should.equal moment(s_end)
 
     it 'should allow initialization with Date object', ->
       dr = moment.range(d_1, d_2)
       moment.isMoment(dr.start).should.be.true
       moment.isMoment(dr.end).should.be.true
-      dr.start.should.equal d_1
-      dr.end.should.equal d_2
 
     it 'should allow initialization with Moment object', ->
       dr = moment.range(m_1, m_2)
       moment.isMoment(dr.start).should.be.true
       moment.isMoment(dr.end).should.be.true
-      dr.start.should.equal m_1
-      dr.end.should.equal m_2
+
+  describe '#clone()', ->
+    it 'should deep clone range', ->
+      dr1 = moment().range(s_start, s_end)
+      dr2 = dr1.clone()
+
+      dr2.start.add(2, 'days')
+      dr1.start.toDate().should.not.equal(dr2.start.toDate())
 
   describe '#by()', ->
     it 'should iterate correctly by range', ->
@@ -121,7 +126,7 @@ describe 'DateRange', ->
       dr1 = moment.range(moment('2011', 'YYYY'), moment('2013', 'YYYY'))
       dr2 = 'years'
 
-      dr1.by dr2, (m) -> acc.push(m.utc().year())
+      dr1.by dr2, (m) -> acc.push(m.year())
 
       acc.should.eql [2011, 2012, 2013]
 
@@ -145,6 +150,54 @@ describe 'DateRange', ->
 
       acc.should.eql ['2012-01', '2012-02', '2012-03']
 
+    it 'should not include .end in the iteration if exclusive is set to true when iterating by string', ->
+      my1 = moment('2014-04-02T00:00:00.000Z')
+      my2 = moment('2014-04-04T00:00:00.000Z')
+      dr1 = moment.range(my1, my2)
+
+      acc = []
+      dr1.by 'd', ((d) -> acc.push d.utc().format('YYYY-MM-DD')), false
+      acc.should.eql ['2014-04-02', '2014-04-03', '2014-04-04']
+
+      acc = []
+      dr1.by 'd', ((d) -> acc.push d.utc().format('YYYY-MM-DD')), true
+      acc.should.eql ['2014-04-02', '2014-04-03']
+
+      acc = []
+      dr1.by 'd', ((d) -> acc.push d.utc().format('YYYY-MM-DD'))
+      acc.should.eql ['2014-04-02', '2014-04-03', '2014-04-04']
+
+    it 'should not include .end in the iteration if exclusive is set to true when iterating by range', ->
+      my1 = moment('2014-04-02T00:00:00.000Z')
+      my2 = moment('2014-04-04T00:00:00.000Z')
+      dr1 = moment.range(my1, my2)
+      dr2 = moment.range(my1, moment('2014-04-03T00:00:00.000Z'))
+
+      acc = []
+      dr1.by dr2, (d) -> acc.push d.utc().format('YYYY-MM-DD')
+      acc.should.eql ['2014-04-02', '2014-04-03', '2014-04-04']
+
+      acc = []
+      dr1.by dr2, ((d) -> acc.push d.utc().format('YYYY-MM-DD')), false
+      acc.should.eql ['2014-04-02', '2014-04-03', '2014-04-04']
+
+      acc = []
+      dr1.by dr2, ((d) -> acc.push d.utc().format('YYYY-MM-DD')), true
+      acc.should.eql ['2014-04-02', '2014-04-03']
+
+    it 'should be exlusive when using by with minutes as well', ->
+      d1 = moment('2014-01-01T00:00:00.000Z')
+      d2 = moment('2014-01-01T00:06:00.000Z')
+      dr = moment.range(d1, d2)
+
+      acc = []
+      dr.by 'm', ((d) -> acc.push d.utc().format('mm'))
+      acc.should.eql ['00', '01', '02', '03', '04', '05', '06']
+
+      acc = []
+      dr.by 'm', ((d) -> acc.push d.utc().format('mm')), true
+      acc.should.eql ['00', '01', '02', '03', '04', '05']
+
   describe '#contains()', ->
     it 'should work with Date objects', ->
       dr = moment.range(d_1, d_2)
@@ -167,6 +220,15 @@ describe 'DateRange', ->
       dr1.contains(m_1).should.be.true
       dr1.contains(m_4).should.be.true
       dr1.contains(dr1).should.be.true
+
+    it 'should be exlusive when the exclusive param is set', ->
+      dr1 = moment.range(m_1, m_2)
+      dr1.contains(dr1, true).should.be.false
+      dr1.contains(dr1, false).should.be.true
+      dr1.contains(dr1).should.be.true
+      dr1.contains(m_2, true).should.be.false
+      dr1.contains(m_2, false).should.be.true
+      dr1.contains(m_2).should.be.true
 
   describe '#overlaps()', ->
     it 'should work with DateRange objects', ->
@@ -249,6 +311,82 @@ describe 'DateRange', ->
       dr_1 = moment.range(d_5, d_6)
       dr_2 = moment.range(d_5, d_6)
       dr_1.intersect(dr_2).isSame(dr_2).should.be.true
+
+    it 'should work with [--{}--] overlaps where (a=[], b={})', ->
+      dr_1 = moment.range(d_6, d_6)
+      dr_2 = moment.range(d_5, d_7)
+      dr_1.intersect(dr_2).isSame(dr_1).should.be.true
+
+  describe '#add()', ->
+    d_5 = new Date Date.UTC(2011, 2, 2)
+    d_6 = new Date Date.UTC(2011, 4, 4)
+    d_7 = new Date Date.UTC(2011, 6, 6)
+    d_8 = new Date Date.UTC(2011, 8, 8)
+
+    it 'should add ranges with [---{==]---} overlaps where (a=[], b={})', ->
+      dr_1 = moment.range(d_5, d_7)
+      dr_2 = moment.range(d_6, d_8)
+      dr_1.add(dr_2).isSame(moment.range(d_5, d_8)).should.be.true
+
+    it 'should add ranges with {---[==}---] overlaps where (a=[], b={})', ->
+      dr_1 = moment.range(d_6, d_8)
+      dr_2 = moment.range(d_5, d_7)
+      dr_1.add(dr_2).isSame(moment.range(d_5, d_8)).should.be.true
+
+    it 'should add ranges with [{===]---} overlaps where (a=[], b={})', ->
+      dr_1 = moment.range(d_5, d_6)
+      dr_2 = moment.range(d_5, d_7)
+      dr_1.add(dr_2).isSame(moment.range(d_5, d_7)).should.be.true
+
+    it 'should add ranges with {[===}---] overlaps where (a=[], b={})', ->
+      dr_1 = moment.range(d_5, d_7)
+      dr_2 = moment.range(d_5, d_6)
+      dr_1.add(dr_2).isSame(moment.range(d_5, d_7)).should.be.true
+
+    it 'should add ranges with [---{===]} overlaps where (a=[], b={})', ->
+      dr_1 = moment.range(d_5, d_7)
+      dr_2 = moment.range(d_6, d_7)
+      dr_1.add(dr_2).isSame(moment.range(d_5, d_7)).should.be.true
+
+    it 'should add ranges with {---[===}] overlaps where (a=[], b={})', ->
+      dr_1 = moment.range(d_6, d_7)
+      dr_2 = moment.range(d_5, d_7)
+      dr_1.add(dr_2).isSame(moment.range(d_5, d_7)).should.be.true
+
+    it 'should not add ranges with [---] {---} overlaps where (a=[], b={})', ->
+      dr_1 = moment.range(d_5, d_6)
+      dr_2 = moment.range(d_7, d_8)
+      should.strictEqual(dr_1.add(dr_2), null)
+
+    it 'should not add ranges with {---} [---] overlaps where (a=[], b={})', ->
+      dr_1 = moment.range(d_7, d_8)
+      dr_2 = moment.range(d_5, d_6)
+      should.strictEqual(dr_1.add(dr_2), null)
+
+    it 'should not add ranges with [---]{---} overlaps where (a=[], b={})', ->
+      dr_1 = moment.range(d_5, d_6)
+      dr_2 = moment.range(d_6, d_7)
+      should.strictEqual(dr_1.add(dr_2), null)
+
+    it 'should not add ranges with {---}[---] overlaps where (a=[], b={})', ->
+      dr_1 = moment.range(d_6, d_7)
+      dr_2 = moment.range(d_5, d_6)
+      should.strictEqual(dr_1.add(dr_2), null)
+
+    it 'should add ranges {--[===]--} overlaps where (a=[], b={})', ->
+      dr_1 = moment.range(d_6, d_7)
+      dr_2 = moment.range(d_5, d_8)
+      dr_1.add(dr_2).isSame(moment.range(d_5, d_8)).should.be.true
+
+    it 'should add ranges [--{===}--] overlaps where (a=[], b={})', ->
+      dr_1 = moment.range(d_5, d_8)
+      dr_2 = moment.range(d_6, d_7)
+      dr_1.add(dr_2).isSame(moment.range(d_5, d_8)).should.be.true
+
+    it 'should add ranges [{===}] overlaps where (a=[], b={})', ->
+      dr_1 = moment.range(d_5, d_6)
+      dr_2 = moment.range(d_5, d_6)
+      dr_1.add(dr_2).isSame(moment.range(d_5, d_6)).should.be.true
 
   describe '#subtract()', ->
     d_5 = new Date Date.UTC(2011, 2, 2)
@@ -341,3 +479,10 @@ describe 'DateRange', ->
       dr.diff('months').should.equal 3
       dr.diff('days').should.equal 92
       dr.diff().should.equal 7948800000
+
+  describe '#center()', ->
+    it 'should use momentjs’ center method', ->
+      d_1 = new Date Date.UTC(2011, 2, 5)
+      d_2 = new Date Date.UTC(2011, 3, 5)
+      dr = moment.range(d_1, d_2)
+      dr.center().valueOf().should.equal 1300622400000

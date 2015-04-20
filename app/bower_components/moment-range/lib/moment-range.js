@@ -45,20 +45,32 @@ DateRange = (function() {
   }
 
   /**
+    * Deep clone range
+    * @return {!DateRange}
+  *
+  */
+
+
+  DateRange.prototype.clone = function() {
+    return moment().range(this.start, this.end);
+  };
+
+  /**
     * Determine if the current interval contains a given moment/date/range.
     *
     * @param {(Moment|Date|DateRange)} other Date to check
+    * @param {!boolean} exclusive True if the to value is exclusive
     *
     * @return {!boolean}
   *
   */
 
 
-  DateRange.prototype.contains = function(other) {
+  DateRange.prototype.contains = function(other, exclusive) {
     if (other instanceof DateRange) {
-      return this.start <= other.start && this.end >= other.end;
+      return this.start <= other.start && (this.end > other.end || (this.end.isSame(other.end) && !exclusive));
     } else {
-      return (this.start <= other && other <= this.end);
+      return this.start <= other && (this.end > other || (this.end.isSame(other) && !exclusive));
     }
   };
 
@@ -68,11 +80,11 @@ DateRange = (function() {
   */
 
 
-  DateRange.prototype._by_string = function(interval, hollaback) {
+  DateRange.prototype._by_string = function(interval, hollaback, exclusive) {
     var current, _results;
     current = moment(this.start);
     _results = [];
-    while (this.contains(current)) {
+    while (this.contains(current, exclusive)) {
       hollaback.call(this, current.clone());
       _results.push(current.add(1, interval));
     }
@@ -85,11 +97,15 @@ DateRange = (function() {
   */
 
 
-  DateRange.prototype._by_range = function(range_interval, hollaback) {
-    var i, l, _i, _results;
-    l = Math.floor(this / range_interval);
+  DateRange.prototype._by_range = function(range_interval, hollaback, exclusive) {
+    var div, i, l, _i, _results;
+    div = this / range_interval;
+    l = Math.floor(div);
     if (l === Infinity) {
       return this;
+    }
+    if (l === div && exclusive) {
+      l = l - 1;
     }
     _results = [];
     for (i = _i = 0; 0 <= l ? _i <= l : _i >= l; i = 0 <= l ? ++_i : --_i) {
@@ -128,10 +144,27 @@ DateRange = (function() {
       return new DateRange(other.start, this.end);
     } else if (((other.start < (_ref3 = this.start) && _ref3 < (_ref2 = other.end)) && _ref2 <= this.end)) {
       return new DateRange(this.start, other.end);
-    } else if (((other.start < (_ref5 = this.start) && _ref5 < (_ref4 = this.end)) && _ref4 < other.end)) {
+    } else if (((other.start < (_ref5 = this.start) && _ref5 <= (_ref4 = this.end)) && _ref4 < other.end)) {
       return this;
-    } else if (((this.start <= (_ref7 = other.start) && _ref7 < (_ref6 = other.end)) && _ref6 <= this.end)) {
+    } else if (((this.start <= (_ref7 = other.start) && _ref7 <= (_ref6 = other.end)) && _ref6 <= this.end)) {
       return other;
+    } else {
+      return null;
+    }
+    /**
+    * Merge date ranges if they intersect.
+    *
+    * @param {!DateRange} other A date range to add to this one
+    *
+    * @return {!DateRange|null}
+      *
+    */
+
+  };
+
+  DateRange.prototype.add = function(other) {
+    if (this.overlaps(other)) {
+      return new DateRange(moment.min(this.start, other.start), moment.max(this.end, other.end));
     } else {
       return null;
     }
@@ -170,17 +203,19 @@ DateRange = (function() {
     *                                        or shorthand string (shorthands:
     *                                        http://momentjs.com/docs/#/manipulating/add/)
     * @param {!function(Moment)}   hollaback Function to execute for each sub-range
+    * @param {!boolean}            exclusive Indicate that the end of the range
+    *                                        should not be included in the iter.
     *
     * @return {!boolean}
   *
   */
 
 
-  DateRange.prototype.by = function(range, hollaback) {
+  DateRange.prototype.by = function(range, hollaback, exclusive) {
     if (typeof range === 'string') {
-      this._by_string(range, hollaback);
+      this._by_string(range, hollaback, exclusive);
     } else {
-      this._by_range(range, hollaback);
+      this._by_range(range, hollaback, exclusive);
     }
     return this;
   };
@@ -195,6 +230,19 @@ DateRange = (function() {
 
   DateRange.prototype.valueOf = function() {
     return this.end - this.start;
+  };
+
+  /**
+    * Center date of the range.
+    * @return {!Moment}
+  *
+  */
+
+
+  DateRange.prototype.center = function() {
+    var center;
+    center = this.start + this.diff() / 2;
+    return moment(center);
   };
 
   /**
@@ -259,7 +307,7 @@ DateRange = (function() {
 */
 
 
-moment.fn.range = function(start, end) {
+moment.range = function(start, end) {
   if (start in INTERVALS) {
     return new DateRange(moment(this).startOf(start), moment(this).endOf(start));
   } else {
@@ -268,21 +316,20 @@ moment.fn.range = function(start, end) {
 };
 
 /**
-  * Build a date range.
-  *
-  * @param {(Moment|Date)} start Start of range
-  * @param {(Moment|Date)} end   End of range
-  *
-  * @this {Moment}
-  *
-  * @return {!DateRange}
+  * Expose constructor
 *
 */
 
 
-moment.range = function(start, end) {
-  return new DateRange(start, end);
-};
+moment.range.constructor = DateRange;
+
+/**
+  * @deprecated
+*
+*/
+
+
+moment.fn.range = moment.range;
 
 /**
   * Check if the current moment is within a given date range.

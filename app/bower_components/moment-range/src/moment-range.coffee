@@ -25,33 +25,45 @@ class DateRange
     @end   = moment(end)
 
   ###*
+    * Deep clone range
+    * @return {!DateRange}
+  *###
+  clone: ->
+    moment().range(@start, @end)
+
+  ###*
     * Determine if the current interval contains a given moment/date/range.
     *
     * @param {(Moment|Date|DateRange)} other Date to check
+    * @param {!boolean} exclusive True if the to value is exclusive
     *
     * @return {!boolean}
   *###
-  contains: (other) ->
+  contains: (other, exclusive) ->
     if other instanceof DateRange
-      @start <= other.start and @end >= other.end
+      @start <= other.start and (@end > other.end or (@end.isSame(other.end) and not exclusive))
     else
-      @start <= other <= @end
+      @start <= other and (@end > other or (@end.isSame(other) and not exclusive))
 
   ###*
     * @private
   *###
-  _by_string: (interval, hollaback) ->
+  _by_string: (interval, hollaback, exclusive) ->
     current = moment(@start)
-    while @contains(current)
+    while @contains(current, exclusive)
       hollaback.call(@, current.clone())
       current.add(1, interval)
 
   ###*
     * @private
   *###
-  _by_range: (range_interval, hollaback) ->
-    l = Math.floor(@ / range_interval)
+  _by_range: (range_interval, hollaback, exclusive) ->
+    div = @ / range_interval
+    l = Math.floor(div)
     return @ if l is Infinity
+    if (l == div and exclusive)
+      l = l - 1
+
 
     for i in [0..l]
       hollaback.call(@, moment(@start.valueOf() + range_interval.valueOf() * i))
@@ -78,10 +90,23 @@ class DateRange
       new DateRange(other.start, @end)
     else if other.start < @start < other.end <= @end
       new DateRange(@start, other.end)
-    else if other.start < @start < @end < other.end
+    else if other.start < @start <= @end < other.end
       @
-    else if @start <= other.start < other.end <= @end
+    else if @start <= other.start <= other.end <= @end
       other
+    else
+      null
+
+    ###*
+    * Merge date ranges if they intersect.
+    *
+    * @param {!DateRange} other A date range to add to this one
+    *
+    * @return {!DateRange|null}
+  *###
+  add: (other) ->
+    if @overlaps(other)
+      new DateRange( moment.min(@start, other.start), moment.max(@end, other.end)  )
     else
       null
 
@@ -114,14 +139,16 @@ class DateRange
     *                                        or shorthand string (shorthands:
     *                                        http://momentjs.com/docs/#/manipulating/add/)
     * @param {!function(Moment)}   hollaback Function to execute for each sub-range
+    * @param {!boolean}            exclusive Indicate that the end of the range
+    *                                        should not be included in the iter.
     *
     * @return {!boolean}
   *###
-  by: (range, hollaback) ->
+  by: (range, hollaback, exclusive) ->
     if typeof range is 'string'
-      @_by_string(range, hollaback)
+      @_by_string(range, hollaback, exclusive)
     else
-      @_by_range(range, hollaback)
+      @_by_range(range, hollaback, exclusive)
     @ # Chainability
 
   ###*
@@ -131,6 +158,14 @@ class DateRange
   *###
   valueOf: ->
     @end - @start
+
+  ###*
+    * Center date of the range.
+    * @return {!Moment}
+  *###
+  center: ->
+    center = @start + @diff()/2
+    moment(center)
 
   ###*
     * Date range toDate
@@ -172,24 +207,21 @@ class DateRange
   *
   * @return {!DateRange}
 *###
-moment.fn.range = (start, end) ->
+moment.range = (start, end) ->
   if start of INTERVALS
     new DateRange(moment(@).startOf(start), moment(@).endOf(start))
   else
     new DateRange(start, end)
 
 ###*
-  * Build a date range.
-  *
-  * @param {(Moment|Date)} start Start of range
-  * @param {(Moment|Date)} end   End of range
-  *
-  * @this {Moment}
-  *
-  * @return {!DateRange}
+  * Expose constructor
 *###
-moment.range = (start, end) ->
-  new DateRange(start, end)
+moment.range.constructor = DateRange
+
+###*
+  * @deprecated
+*###
+moment.fn.range = moment.range
 
 ###*
   * Check if the current moment is within a given date range.

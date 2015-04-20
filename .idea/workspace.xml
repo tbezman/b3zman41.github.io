@@ -1,0 +1,1452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8fc65e93-7a28-4cb6-bafd-22dcec52f810" name="Default" comment="">
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-animate\.bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-animate\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-animate\angular-animate.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-animate\angular-animate.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-animate\angular-animate.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-animate\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-animate\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-aria\.bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-aria\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-aria\angular-aria.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-aria\angular-aria.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-aria\angular-aria.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-aria\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-aria\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-bindonce\.bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-bindonce\CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-bindonce\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-bindonce\bindonce.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-bindonce\bindonce.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-bindonce\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-bindonce\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-date-range-picker\.bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-date-range-picker\.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-date-range-picker\Gruntfile.coffee" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-date-range-picker\LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-date-range-picker\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-date-range-picker\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-date-range-picker\build\angular-date-range-picker.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-date-range-picker\build\angular-date-range-picker.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-date-range-picker\build\angular-date-range-picker.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-date-range-picker\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-date-range-picker\src\angular-date-range-picker.coffee" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-date-range-picker\src\angular-date-range-picker.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-date-range-picker\test\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\.bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\angular-material.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\angular-material.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\angular-material.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\angular-material.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\backdrop\backdrop-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\backdrop\backdrop.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\backdrop\backdrop.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\bottomSheet\bottomSheet-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\bottomSheet\bottomSheet.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\bottomSheet\bottomSheet.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\button\button-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\button\button.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\button\button.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\card\card-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\card\card.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\card\card.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\checkbox\checkbox-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\checkbox\checkbox.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\checkbox\checkbox.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\content\content-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\content\content.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\content\content.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\core\core.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\core\core.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\dialog\dialog-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\dialog\dialog.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\dialog\dialog.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\divider\divider-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\divider\divider.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\divider\divider.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\icon\icon.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\icon\icon.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\list\list.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\list\list.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\progressCircular\progressCircular-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\progressCircular\progressCircular.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\progressCircular\progressCircular.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\progressLinear\progressLinear-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\progressLinear\progressLinear.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\progressLinear\progressLinear.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\radioButton\radioButton-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\radioButton\radioButton.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\radioButton\radioButton.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\sidenav\sidenav.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\sidenav\sidenav.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\slider\slider-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\slider\slider.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\slider\slider.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\sticky\sticky.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\sticky\sticky.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\subheader\subheader-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\subheader\subheader.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\subheader\subheader.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\swipe\swipe.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\switch\switch-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\switch\switch.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\switch\switch.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\tabs\tabs-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\tabs\tabs.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\tabs\tabs.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\textField\textField-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\textField\textField.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\textField\textField.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\toast\toast-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\toast\toast.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\toast\toast.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\toolbar\toolbar-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\toolbar\toolbar.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\toolbar\toolbar.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\tooltip\tooltip-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\tooltip\tooltip.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\tooltip\tooltip.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\whiteframe\whiteframe.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\closure\whiteframe\whiteframe.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\backdrop\backdrop-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\backdrop\backdrop-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\backdrop\backdrop.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\backdrop\backdrop.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\backdrop\backdrop.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\backdrop\backdrop.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\backdrop\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\bottomSheet\bottomSheet-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\bottomSheet\bottomSheet-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\bottomSheet\bottomSheet.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\bottomSheet\bottomSheet.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\bottomSheet\bottomSheet.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\bottomSheet\bottomSheet.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\bottomSheet\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\button\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\button\button-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\button\button-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\button\button.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\button\button.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\button\button.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\button\button.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\card\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\card\card-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\card\card-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\card\card.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\card\card.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\card\card.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\card\card.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\checkbox\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\checkbox\checkbox-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\checkbox\checkbox-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\checkbox\checkbox.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\checkbox\checkbox.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\checkbox\checkbox.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\checkbox\checkbox.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\content\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\content\content-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\content\content-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\content\content.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\content\content.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\content\content.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\content\content.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\core\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\core\core.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\core\core.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\core\core.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\core\core.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\dialog\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\dialog\dialog-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\dialog\dialog-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\dialog\dialog.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\dialog\dialog.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\dialog\dialog.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\dialog\dialog.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\divider\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\divider\divider-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\divider\divider-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\divider\divider.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\divider\divider.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\divider\divider.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\divider\divider.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\icon\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\icon\icon.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\icon\icon.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\icon\icon.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\icon\icon.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\list\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\list\list.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\list\list.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\list\list.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\list\list.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\progressCircular\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\progressCircular\progressCircular-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\progressCircular\progressCircular-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\progressCircular\progressCircular.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\progressCircular\progressCircular.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\progressCircular\progressCircular.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\progressCircular\progressCircular.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\progressLinear\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\progressLinear\progressLinear-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\progressLinear\progressLinear-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\progressLinear\progressLinear.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\progressLinear\progressLinear.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\progressLinear\progressLinear.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\progressLinear\progressLinear.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\radioButton\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\radioButton\radioButton-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\radioButton\radioButton-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\radioButton\radioButton.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\radioButton\radioButton.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\radioButton\radioButton.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\radioButton\radioButton.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\sidenav\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\sidenav\sidenav.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\sidenav\sidenav.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\sidenav\sidenav.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\sidenav\sidenav.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\slider\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\slider\slider-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\slider\slider-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\slider\slider.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\slider\slider.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\slider\slider.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\slider\slider.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\sticky\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\sticky\sticky.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\sticky\sticky.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\sticky\sticky.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\sticky\sticky.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\subheader\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\subheader\subheader-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\subheader\subheader-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\subheader\subheader.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\subheader\subheader.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\subheader\subheader.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\subheader\subheader.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\swipe\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\swipe\swipe.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\swipe\swipe.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\switch\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\switch\switch-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\switch\switch-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\switch\switch.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\switch\switch.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\switch\switch.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\switch\switch.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\tabs\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\tabs\tabs-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\tabs\tabs-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\tabs\tabs.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\tabs\tabs.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\tabs\tabs.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\tabs\tabs.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\textField\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\textField\textField-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\textField\textField-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\textField\textField.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\textField\textField.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\textField\textField.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\textField\textField.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\toast\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\toast\toast-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\toast\toast-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\toast\toast.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\toast\toast.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\toast\toast.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\toast\toast.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\toolbar\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\toolbar\toolbar-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\toolbar\toolbar-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\toolbar\toolbar.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\toolbar\toolbar.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\toolbar\toolbar.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\toolbar\toolbar.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\tooltip\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\tooltip\tooltip-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\tooltip\tooltip-default-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\tooltip\tooltip.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\tooltip\tooltip.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\tooltip\tooltip.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\tooltip\tooltip.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\whiteframe\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\whiteframe\whiteframe.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\whiteframe\whiteframe.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\whiteframe\whiteframe.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\modules\js\whiteframe\whiteframe.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\themes\amber-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\themes\blue-grey-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\themes\blue-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\themes\brown-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\themes\cyan-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\themes\deep-orange-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\themes\deep-purple-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\themes\green-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\themes\grey-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\themes\indigo-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\themes\light-blue-dark-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\themes\light-green-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\themes\lime-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\themes\orange-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\themes\pink-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\themes\purple-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\themes\red-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\themes\teal-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular-material\themes\yellow-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular\.bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular\angular-csp.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular\angular.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular\angular.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular\angular.min.js.gzip" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular\angular.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\angular\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\hammerjs\.bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\hammerjs\.bowerrc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\hammerjs\.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\hammerjs\.jscsrc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\hammerjs\.jshintrc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\hammerjs\.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\hammerjs\CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\hammerjs\CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\hammerjs\Gruntfile.coffee" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\hammerjs\LICENSE.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\hammerjs\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\hammerjs\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\hammerjs\component.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\hammerjs\hammer.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\hammerjs\hammer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\hammerjs\hammer.min.map" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\hammerjs\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment-range\.bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment-range\Gruntfile.coffee" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment-range\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment-range\UNLICENSE" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment-range\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment-range\coffeelint.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment-range\lib\moment-range.bare.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment-range\lib\moment-range.bare.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment-range\lib\moment-range.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment-range\lib\moment-range.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment-range\package.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment-range\src\moment-range.coffee" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment-range\test\moment-range.coffee" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\.bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\benchmarks\clone.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\af.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\ar-ma.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\ar-sa.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\ar.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\az.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\be.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\bg.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\bn.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\bo.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\br.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\bs.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\ca.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\cs.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\cv.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\cy.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\da.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\de-at.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\de.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\el.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\en-au.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\en-ca.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\en-gb.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\eo.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\es.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\et.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\eu.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\fa.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\fi.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\fo.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\fr-ca.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\fr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\gl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\he.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\hi.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\hr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\hu.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\hy-am.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\id.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\is.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\it.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\ja.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\ka.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\km.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\ko.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\lb.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\lt.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\lv.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\mk.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\ml.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\mr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\ms-my.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\my.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\nb.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\ne.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\nl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\nn.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\pl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\pt-br.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\pt.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\ro.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\ru.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\sk.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\sl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\sq.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\sr-cyrl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\sr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\sv.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\ta.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\th.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\tl-ph.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\tr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\tzm-latn.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\tzm.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\uk.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\uz.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\vi.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\zh-cn.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\locale\zh-tw.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\min\locales.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\min\locales.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\min\moment-with-locales.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\min\moment-with-locales.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\min\moment.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\moment.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\bower_components\moment\scripts\npm_prepublish.sh" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\scripts\appController.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\scripts\daterangepicker.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\scripts\jquery-2.1.1.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\scripts\jquery.metadata.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\scripts\jquery.tablesorter.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\scripts\jquery.tablesorter.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\scripts\moment.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\scripts\moment.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\app\styles\daterangepicker-bs3.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\bower_components\angular-material\themes\amber-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\bower_components\angular-material\themes\blue-grey-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\bower_components\angular-material\themes\blue-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\bower_components\angular-material\themes\brown-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\bower_components\angular-material\themes\cyan-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\bower_components\angular-material\themes\deep-orange-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\bower_components\angular-material\themes\deep-purple-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\bower_components\angular-material\themes\green-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\bower_components\angular-material\themes\grey-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\bower_components\angular-material\themes\indigo-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\bower_components\angular-material\themes\light-blue-dark-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\bower_components\angular-material\themes\light-green-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\bower_components\angular-material\themes\lime-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\bower_components\angular-material\themes\orange-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\bower_components\angular-material\themes\pink-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\bower_components\angular-material\themes\purple-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\bower_components\angular-material\themes\red-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\bower_components\angular-material\themes\teal-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Terence\IdeaProjects\NYC Open Data\app\bower_components\angular-material\themes\yellow-theme.css" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular/angular.min.js.gzip" afterPath="$PROJECT_DIR$/app/bower_components/angular/angular.min.js.gzip" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular/.bower.json" afterPath="$PROJECT_DIR$/app/bower_components/angular/.bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-animate/.bower.json" afterPath="$PROJECT_DIR$/app/bower_components/angular-animate/.bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-aria/.bower.json" afterPath="$PROJECT_DIR$/app/bower_components/angular-aria/.bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-bindonce/.bower.json" afterPath="$PROJECT_DIR$/app/bower_components/angular-bindonce/.bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/.bower.json" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/.bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/.bower.json" afterPath="$PROJECT_DIR$/app/bower_components/moment/.bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment-range/.bower.json" afterPath="$PROJECT_DIR$/app/bower_components/moment-range/.bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-bindonce/CHANGELOG.md" afterPath="$PROJECT_DIR$/app/bower_components/angular-bindonce/CHANGELOG.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/CHANGELOG.md" afterPath="$PROJECT_DIR$/app/bower_components/moment/CHANGELOG.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment-range/Gruntfile.coffee" afterPath="$PROJECT_DIR$/app/bower_components/moment-range/Gruntfile.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/LICENSE" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/LICENSE" afterPath="$PROJECT_DIR$/app/bower_components/moment/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular/README.md" afterPath="$PROJECT_DIR$/app/bower_components/angular/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-animate/README.md" afterPath="$PROJECT_DIR$/app/bower_components/angular-animate/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-aria/README.md" afterPath="$PROJECT_DIR$/app/bower_components/angular-aria/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-bindonce/README.md" afterPath="$PROJECT_DIR$/app/bower_components/angular-bindonce/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/README.md" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/README.md" afterPath="$PROJECT_DIR$/app/bower_components/moment/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment-range/README.md" afterPath="$PROJECT_DIR$/app/bower_components/moment-range/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment-range/UNLICENSE" afterPath="$PROJECT_DIR$/app/bower_components/moment-range/UNLICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/pages/_home.scss" afterPath="$PROJECT_DIR$/app/styles/pages/_home.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/base/_typography.scss" afterPath="$PROJECT_DIR$/app/styles/base/_typography.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/af.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/af.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-animate/angular-animate.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-animate/angular-animate.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-animate/angular-animate.min.js.map" afterPath="$PROJECT_DIR$/app/bower_components/angular-animate/angular-animate.min.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-animate/angular-animate.min.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-animate/angular-animate.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-aria/angular-aria.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-aria/angular-aria.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-aria/angular-aria.min.js.map" afterPath="$PROJECT_DIR$/app/bower_components/angular-aria/angular-aria.min.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-aria/angular-aria.min.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-aria/angular-aria.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular/angular-csp.css" afterPath="$PROJECT_DIR$/app/bower_components/angular/angular-csp.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/angular-material.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/angular-material.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/angular-material.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/angular-material.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/angular-material.min.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/angular-material.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/angular-material.min.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/angular-material.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular/angular.js" afterPath="$PROJECT_DIR$/app/bower_components/angular/angular.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular/angular.min.js.map" afterPath="$PROJECT_DIR$/app/bower_components/angular/angular.min.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular/angular.min.js" afterPath="$PROJECT_DIR$/app/bower_components/angular/angular.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/appController.js" afterPath="$PROJECT_DIR$/app/scripts/appController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/ar-ma.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/ar-ma.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/ar-sa.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/ar-sa.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/ar.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/ar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/az.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/az.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/backdrop/backdrop-default-theme.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/backdrop/backdrop-default-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/backdrop/backdrop-default-theme.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/backdrop/backdrop-default-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/backdrop/backdrop-default-theme.min.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/backdrop/backdrop-default-theme.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/backdrop/backdrop.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/backdrop/backdrop.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/backdrop/backdrop.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/backdrop/backdrop.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/backdrop/backdrop.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/backdrop/backdrop.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/backdrop/backdrop.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/backdrop/backdrop.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/backdrop/backdrop.min.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/backdrop/backdrop.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/backdrop/backdrop.min.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/backdrop/backdrop.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/be.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/be.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/bg.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/bg.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-bindonce/bindonce.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-bindonce/bindonce.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-bindonce/bindonce.min.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-bindonce/bindonce.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/bn.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/bn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/bo.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/bo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/bottomSheet/bottomSheet-default-theme.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/bottomSheet/bottomSheet-default-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/bottomSheet/bottomSheet-default-theme.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/bottomSheet/bottomSheet-default-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/bottomSheet/bottomSheet-default-theme.min.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/bottomSheet/bottomSheet-default-theme.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/bottomSheet/bottomSheet.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/bottomSheet/bottomSheet.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/bottomSheet/bottomSheet.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/bottomSheet/bottomSheet.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/bottomSheet/bottomSheet.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/bottomSheet/bottomSheet.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/bottomSheet/bottomSheet.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/bottomSheet/bottomSheet.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/bottomSheet/bottomSheet.min.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/bottomSheet/bottomSheet.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/bottomSheet/bottomSheet.min.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/bottomSheet/bottomSheet.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower.json" afterPath="$PROJECT_DIR$/app/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular/bower.json" afterPath="$PROJECT_DIR$/app/bower_components/angular/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-animate/bower.json" afterPath="$PROJECT_DIR$/app/bower_components/angular-animate/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-aria/bower.json" afterPath="$PROJECT_DIR$/app/bower_components/angular-aria/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-bindonce/bower.json" afterPath="$PROJECT_DIR$/app/bower_components/angular-bindonce/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/bower.json" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/backdrop/bower.json" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/backdrop/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/bottomSheet/bower.json" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/bottomSheet/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/button/bower.json" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/button/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/card/bower.json" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/card/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/checkbox/bower.json" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/checkbox/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/content/bower.json" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/content/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/core/bower.json" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/core/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/dialog/bower.json" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/dialog/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/divider/bower.json" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/divider/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/icon/bower.json" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/icon/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/list/bower.json" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/list/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/progressCircular/bower.json" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/progressCircular/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/progressLinear/bower.json" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/progressLinear/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/radioButton/bower.json" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/radioButton/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/sidenav/bower.json" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/sidenav/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/slider/bower.json" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/slider/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/sticky/bower.json" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/sticky/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/subheader/bower.json" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/subheader/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/swipe/bower.json" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/swipe/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/switch/bower.json" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/switch/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/tabs/bower.json" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/tabs/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/textField/bower.json" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/textField/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/toast/bower.json" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/toast/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/toolbar/bower.json" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/toolbar/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/tooltip/bower.json" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/tooltip/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/whiteframe/bower.json" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/whiteframe/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/bower.json" afterPath="$PROJECT_DIR$/app/bower_components/moment/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment-range/bower.json" afterPath="$PROJECT_DIR$/app/bower_components/moment-range/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/br.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/br.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/bs.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/bs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/button/button-default-theme.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/button/button-default-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/button/button-default-theme.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/button/button-default-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/button/button-default-theme.min.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/button/button-default-theme.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/button/button.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/button/button.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/button/button.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/button/button.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/button/button.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/button/button.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/button/button.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/button/button.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/button/button.min.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/button/button.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/button/button.min.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/button/button.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/ca.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/ca.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/card/card-default-theme.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/card/card-default-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/card/card-default-theme.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/card/card-default-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/card/card-default-theme.min.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/card/card-default-theme.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/card/card.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/card/card.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/card/card.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/card/card.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/card/card.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/card/card.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/card/card.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/card/card.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/card/card.min.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/card/card.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/card/card.min.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/card/card.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/checkbox/checkbox-default-theme.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/checkbox/checkbox-default-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/checkbox/checkbox-default-theme.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/checkbox/checkbox-default-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/checkbox/checkbox-default-theme.min.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/checkbox/checkbox-default-theme.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/checkbox/checkbox.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/checkbox/checkbox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/checkbox/checkbox.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/checkbox/checkbox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/checkbox/checkbox.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/checkbox/checkbox.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/checkbox/checkbox.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/checkbox/checkbox.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/checkbox/checkbox.min.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/checkbox/checkbox.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/checkbox/checkbox.min.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/checkbox/checkbox.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/benchmarks/clone.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/benchmarks/clone.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment-range/coffeelint.json" afterPath="$PROJECT_DIR$/app/bower_components/moment-range/coffeelint.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/content/content-default-theme.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/content/content-default-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/content/content-default-theme.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/content/content-default-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/content/content-default-theme.min.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/content/content-default-theme.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/content/content.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/content/content.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/content/content.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/content/content.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/content/content.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/content/content.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/content/content.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/content/content.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/content/content.min.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/content/content.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/content/content.min.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/content/content.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/core/core.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/core/core.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/core/core.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/core/core.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/core/core.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/core/core.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/core/core.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/core/core.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/core/core.min.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/core/core.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/core/core.min.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/core/core.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/cs.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/cs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/cv.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/cv.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/cy.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/cy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/da.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/da.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/de-at.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/de-at.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/de.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/de.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/dialog/dialog-default-theme.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/dialog/dialog-default-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/dialog/dialog-default-theme.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/dialog/dialog-default-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/dialog/dialog-default-theme.min.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/dialog/dialog-default-theme.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/dialog/dialog.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/dialog/dialog.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/dialog/dialog.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/dialog/dialog.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/dialog/dialog.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/dialog/dialog.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/dialog/dialog.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/dialog/dialog.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/dialog/dialog.min.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/dialog/dialog.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/dialog/dialog.min.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/dialog/dialog.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/divider/divider-default-theme.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/divider/divider-default-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/divider/divider-default-theme.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/divider/divider-default-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/divider/divider-default-theme.min.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/divider/divider-default-theme.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/divider/divider.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/divider/divider.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/divider/divider.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/divider/divider.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/divider/divider.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/divider/divider.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/divider/divider.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/divider/divider.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/divider/divider.min.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/divider/divider.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/divider/divider.min.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/divider/divider.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/el.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/el.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/en-au.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/en-au.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/en-ca.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/en-ca.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/en-gb.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/en-gb.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/eo.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/eo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/es.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/es.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/et.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/et.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/eu.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/eu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/fa.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/fa.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/fi.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/fi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/fo.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/fo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/fr-ca.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/fr-ca.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/fr.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/fr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/gl.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/gl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/he.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/he.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/hi.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/hi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/hr.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/hr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/hu.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/hu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/hy-am.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/hy-am.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/icon/icon.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/icon/icon.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/icon/icon.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/icon/icon.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/icon/icon.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/icon/icon.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/icon/icon.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/icon/icon.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/icon/icon.min.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/icon/icon.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/icon/icon.min.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/icon/icon.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/id.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/id.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/is.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/is.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/it.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/it.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/ja.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/ja.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/ka.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/ka.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/km.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/km.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/ko.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/ko.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/lb.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/lb.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/list/list.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/list/list.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/list/list.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/list/list.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/list/list.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/list/list.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/list/list.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/list/list.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/list/list.min.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/list/list.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/list/list.min.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/list/list.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/min/locales.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/min/locales.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/min/locales.min.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/min/locales.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/lt.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/lt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/lv.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/lv.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/main.css.map" afterPath="$PROJECT_DIR$/app/styles/main.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/styles/main.css.map" afterPath="$PROJECT_DIR$/dist/styles/main.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/main.css" afterPath="$PROJECT_DIR$/app/styles/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/styles/main.css" afterPath="$PROJECT_DIR$/dist/styles/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/main.scss" afterPath="$PROJECT_DIR$/app/styles/main.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/mk.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/mk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/ml.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/ml.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment-range/lib/moment-range.bare.js" afterPath="$PROJECT_DIR$/app/bower_components/moment-range/lib/moment-range.bare.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment-range/lib/moment-range.bare.min.js" afterPath="$PROJECT_DIR$/app/bower_components/moment-range/lib/moment-range.bare.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment-range/src/moment-range.coffee" afterPath="$PROJECT_DIR$/app/bower_components/moment-range/src/moment-range.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment-range/test/moment-range.coffee" afterPath="$PROJECT_DIR$/app/bower_components/moment-range/test/moment-range.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment-range/lib/moment-range.js" afterPath="$PROJECT_DIR$/app/bower_components/moment-range/lib/moment-range.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment-range/lib/moment-range.min.js" afterPath="$PROJECT_DIR$/app/bower_components/moment-range/lib/moment-range.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/min/moment-with-locales.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/min/moment-with-locales.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/min/moment-with-locales.min.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/min/moment-with-locales.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/moment.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/moment.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/min/moment.min.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/min/moment.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/mr.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/mr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/ms-my.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/ms-my.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/my.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/my.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/nb.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/nb.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/ne.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/ne.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/nl.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/nl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/nn.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/nn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/scripts/npm_prepublish.sh" afterPath="$PROJECT_DIR$/app/bower_components/moment/scripts/npm_prepublish.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular/package.json" afterPath="$PROJECT_DIR$/app/bower_components/angular/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-animate/package.json" afterPath="$PROJECT_DIR$/app/bower_components/angular-animate/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-aria/package.json" afterPath="$PROJECT_DIR$/app/bower_components/angular-aria/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-bindonce/package.json" afterPath="$PROJECT_DIR$/app/bower_components/angular-bindonce/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment-range/package.json" afterPath="$PROJECT_DIR$/app/bower_components/moment-range/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/pl.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/pl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/progressCircular/progressCircular-default-theme.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/progressCircular/progressCircular-default-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/progressCircular/progressCircular-default-theme.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/progressCircular/progressCircular-default-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/progressCircular/progressCircular-default-theme.min.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/progressCircular/progressCircular-default-theme.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/progressCircular/progressCircular.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/progressCircular/progressCircular.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/progressCircular/progressCircular.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/progressCircular/progressCircular.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/progressCircular/progressCircular.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/progressCircular/progressCircular.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/progressCircular/progressCircular.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/progressCircular/progressCircular.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/progressCircular/progressCircular.min.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/progressCircular/progressCircular.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/progressCircular/progressCircular.min.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/progressCircular/progressCircular.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/progressLinear/progressLinear-default-theme.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/progressLinear/progressLinear-default-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/progressLinear/progressLinear-default-theme.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/progressLinear/progressLinear-default-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/progressLinear/progressLinear-default-theme.min.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/progressLinear/progressLinear-default-theme.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/progressLinear/progressLinear.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/progressLinear/progressLinear.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/progressLinear/progressLinear.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/progressLinear/progressLinear.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/progressLinear/progressLinear.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/progressLinear/progressLinear.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/progressLinear/progressLinear.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/progressLinear/progressLinear.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/progressLinear/progressLinear.min.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/progressLinear/progressLinear.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/progressLinear/progressLinear.min.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/progressLinear/progressLinear.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/pt-br.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/pt-br.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/pt.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/pt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/radioButton/radioButton-default-theme.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/radioButton/radioButton-default-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/radioButton/radioButton-default-theme.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/radioButton/radioButton-default-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/radioButton/radioButton-default-theme.min.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/radioButton/radioButton-default-theme.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/radioButton/radioButton.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/radioButton/radioButton.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/radioButton/radioButton.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/radioButton/radioButton.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/radioButton/radioButton.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/radioButton/radioButton.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/radioButton/radioButton.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/radioButton/radioButton.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/radioButton/radioButton.min.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/radioButton/radioButton.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/radioButton/radioButton.min.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/radioButton/radioButton.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/ro.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/ro.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/ru.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/ru.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/sidenav/sidenav.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/sidenav/sidenav.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/sidenav/sidenav.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/sidenav/sidenav.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/sidenav/sidenav.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/sidenav/sidenav.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/sidenav/sidenav.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/sidenav/sidenav.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/sidenav/sidenav.min.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/sidenav/sidenav.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/sidenav/sidenav.min.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/sidenav/sidenav.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/sk.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/sk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/sl.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/sl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/slider/slider-default-theme.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/slider/slider-default-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/slider/slider-default-theme.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/slider/slider-default-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/slider/slider-default-theme.min.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/slider/slider-default-theme.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/slider/slider.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/slider/slider.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/slider/slider.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/slider/slider.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/slider/slider.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/slider/slider.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/slider/slider.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/slider/slider.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/slider/slider.min.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/slider/slider.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/slider/slider.min.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/slider/slider.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/sq.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/sq.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/sr-cyrl.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/sr-cyrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/sr.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/sr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/sticky/sticky.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/sticky/sticky.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/sticky/sticky.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/sticky/sticky.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/sticky/sticky.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/sticky/sticky.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/sticky/sticky.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/sticky/sticky.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/sticky/sticky.min.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/sticky/sticky.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/sticky/sticky.min.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/sticky/sticky.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/subheader/subheader-default-theme.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/subheader/subheader-default-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/subheader/subheader-default-theme.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/subheader/subheader-default-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/subheader/subheader-default-theme.min.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/subheader/subheader-default-theme.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/subheader/subheader.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/subheader/subheader.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/subheader/subheader.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/subheader/subheader.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/subheader/subheader.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/subheader/subheader.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/subheader/subheader.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/subheader/subheader.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/subheader/subheader.min.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/subheader/subheader.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/subheader/subheader.min.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/subheader/subheader.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/sv.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/sv.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/swipe/swipe.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/swipe/swipe.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/swipe/swipe.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/swipe/swipe.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/swipe/swipe.min.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/swipe/swipe.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/switch/switch-default-theme.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/switch/switch-default-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/switch/switch-default-theme.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/switch/switch-default-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/switch/switch-default-theme.min.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/switch/switch-default-theme.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/switch/switch.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/switch/switch.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/switch/switch.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/switch/switch.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/switch/switch.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/switch/switch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/switch/switch.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/switch/switch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/switch/switch.min.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/switch/switch.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/switch/switch.min.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/switch/switch.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/ta.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/ta.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/tabs/tabs-default-theme.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/tabs/tabs-default-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/tabs/tabs-default-theme.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/tabs/tabs-default-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/tabs/tabs-default-theme.min.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/tabs/tabs-default-theme.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/tabs/tabs.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/tabs/tabs.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/tabs/tabs.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/tabs/tabs.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/tabs/tabs.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/tabs/tabs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/tabs/tabs.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/tabs/tabs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/tabs/tabs.min.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/tabs/tabs.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/tabs/tabs.min.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/tabs/tabs.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/textField/textField-default-theme.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/textField/textField-default-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/textField/textField-default-theme.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/textField/textField-default-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/textField/textField-default-theme.min.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/textField/textField-default-theme.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/textField/textField.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/textField/textField.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/textField/textField.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/textField/textField.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/textField/textField.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/textField/textField.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/textField/textField.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/textField/textField.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/textField/textField.min.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/textField/textField.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/textField/textField.min.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/textField/textField.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/th.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/th.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/tl-ph.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/tl-ph.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/toast/toast-default-theme.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/toast/toast-default-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/toast/toast-default-theme.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/toast/toast-default-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/toast/toast-default-theme.min.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/toast/toast-default-theme.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/toast/toast.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/toast/toast.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/toast/toast.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/toast/toast.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/toast/toast.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/toast/toast.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/toast/toast.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/toast/toast.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/toast/toast.min.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/toast/toast.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/toast/toast.min.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/toast/toast.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/toolbar/toolbar-default-theme.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/toolbar/toolbar-default-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/toolbar/toolbar-default-theme.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/toolbar/toolbar-default-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/toolbar/toolbar-default-theme.min.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/toolbar/toolbar-default-theme.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/toolbar/toolbar.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/toolbar/toolbar.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/toolbar/toolbar.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/toolbar/toolbar.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/toolbar/toolbar.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/toolbar/toolbar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/toolbar/toolbar.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/toolbar/toolbar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/toolbar/toolbar.min.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/toolbar/toolbar.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/toolbar/toolbar.min.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/toolbar/toolbar.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/tooltip/tooltip-default-theme.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/tooltip/tooltip-default-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/tooltip/tooltip-default-theme.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/tooltip/tooltip-default-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/tooltip/tooltip-default-theme.min.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/tooltip/tooltip-default-theme.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/tooltip/tooltip.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/tooltip/tooltip.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/tooltip/tooltip.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/tooltip/tooltip.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/tooltip/tooltip.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/tooltip/tooltip.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/tooltip/tooltip.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/tooltip/tooltip.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/tooltip/tooltip.min.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/tooltip/tooltip.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/tooltip/tooltip.min.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/tooltip/tooltip.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/tr.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/tr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/tzm-latn.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/tzm-latn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/tzm.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/tzm.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/uk.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/uk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/uz.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/uz.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/vi.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/vi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/whiteframe/whiteframe.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/whiteframe/whiteframe.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/whiteframe/whiteframe.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/whiteframe/whiteframe.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/whiteframe/whiteframe.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/closure/whiteframe/whiteframe.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/whiteframe/whiteframe.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/whiteframe/whiteframe.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/whiteframe/whiteframe.min.css" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/whiteframe/whiteframe.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/whiteframe/whiteframe.min.js" afterPath="$PROJECT_DIR$/app/bower_components/angular-material/modules/js/whiteframe/whiteframe.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/zh-cn.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/zh-cn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bower_components/moment/locale/zh-tw.js" afterPath="$PROJECT_DIR$/app/bower_components/moment/locale/zh-tw.js" />
+    </list>
+    <ignored path="NYC Open Data.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="NYC Open Data" />
+  </component>
+  <component name="FileEditorManager">
+    <splitter split-orientation="horizontal" split-proportion="0.65130025">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.44468546">
+                  <caret line="191" column="31" selection-start-line="191" selection-start-column="31" selection-end-line="191" selection-end-column="31" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="appController.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/scripts/appController.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-10.551724">
+                  <caret line="33" column="47" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="47" />
+                  <folding>
+                    <element signature="n#!!block;n#getAgencies#0" expanded="false" />
+                    <element signature="n#!!block;n#getStatuses#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="_home.scss" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/styles/pages/_home.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.121475056">
+                  <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="_typography.scss" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/styles/base/_typography.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-10.769231">
+                  <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/app/styles/main.scss" />
+        <option value="$PROJECT_DIR$/app/styles/components/input.scss" />
+        <option value="$PROJECT_DIR$/gulpfile.js" />
+        <option value="$PROJECT_DIR$/app/styles/base/_typography.scss" />
+        <option value="$PROJECT_DIR$/app/scripts/appController.js" />
+        <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/app/styles/pages/_home.scss" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Bundled (Maven 3)" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="NamedScopeManager">
+    <order />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NYC Open Data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NYC Open Data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NYC Open Data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NYC Open Data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NYC Open Data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NYC Open Data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NYC Open Data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="styles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NYC Open Data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NYC Open Data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="styles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NYC Open Data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NYC Open Data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="styles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NYC Open Data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NYC Open Data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="styles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NYC Open Data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NYC Open Data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <module name="" />
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="depsClasspath" value="false" />
+      <setting name="passParentEnv" value="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <setting name="launchBrowser" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <profiling log-folder="C:\Users\Terence\IdeaProjects\NYC Open Data" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="StatisticProjectComponent">
+    <option name="excludeCompilerOutput" value="true" />
+    <option name="excludeIdea9ArtifactDirectory" value="true" />
+    <option name="excludeTargetDirectories" value="true" />
+    <option name="activateWhenOpenProject" value="true" />
+    <option name="excludedDirectories">
+      <value>
+        <list size="0" />
+      </value>
+    </option>
+    <option name="fileTypes" value="class;svn-base;svn-work;Extra;gif;png;jpg;jpeg;bmp;tga;tiff;ear;war;zip;jar;iml;iws;ipr;bz2;gz;" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8fc65e93-7a28-4cb6-bafd-22dcec52f810" name="Default" comment="" />
+      <created>1429533476835</created>
+      <option name="number" value="Default" />
+      <updated>1429533476835</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Minimized stickies" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/styles/components/_buttons.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6681128">
+          <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/components/input.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.060737528">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/base/_typography.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.769231">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/appController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.551724">
+          <caret line="33" column="47" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="47" />
+          <folding>
+            <element signature="n#!!block;n#getAgencies#0" expanded="false" />
+            <element signature="n#!!block;n#getStatuses#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44468546">
+          <caret line="191" column="31" selection-start-line="191" selection-start-column="31" selection-end-line="191" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/pages/_home.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.121475056">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

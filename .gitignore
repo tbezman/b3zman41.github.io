@@ -3,3 +3,4 @@
 /.tmp
 /.dist
 /WEB-INF
+/app/styles/.sass-cache

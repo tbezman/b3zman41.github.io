@@ -2,7 +2,7 @@
  * Angular Material Design
  * https://github.com/angular/material
  * @license MIT
- * v0.6.0-rc3
+ * v0.7.0-rc3
  */
 (function() {
 'use strict';
@@ -202,14 +202,16 @@ MdDialogDirective.$inject = ["$$rAF", "$mdTheming"];
  * @description
  * Show a dialog with the specified options.
  *
- * @param {object} optionsOrPreset Either provide an `$mdToastPreset` returned from `alert()`,
- * `confirm()`, and `build()`, or an options object with the following properties:
+ * @param {object} optionsOrPreset Either provide an `$mdDialogPreset` returned from `alert()`,
+ * `confirm()` or an options object with the following properties:
  *   - `templateUrl` - `{string=}`: The url of a template that will be used as the content
  *   of the dialog.
  *   - `template` - `{string=}`: Same as templateUrl, except this is an actual template string.
  *   - `targetEvent` - `{DOMClickEvent=}`: A click's event object. When passed in as an option,
  *     the location of the click will be used as the starting point for the opening animation
  *     of the the dialog.
+ *   - `disableParentScroll` - `{boolean=}`: Whether to disable scrolling while the dialog is open.
+ *     Default true.
  *   - `hasBackdrop` - `{boolean=}`: Whether there should be an opaque backdrop behind the dialog.
  *     Default true.
  *   - `clickOutsideToClose` - `{boolean=}`: Whether the user can click outside the dialog to
@@ -221,10 +223,10 @@ MdDialogDirective.$inject = ["$$rAF", "$mdTheming"];
  *   - `locals` - `{object=}`: An object containing key/value pairs. The keys will be used as names
  *     of values to inject into the controller. For example, `locals: {three: 3}` would inject
  *     `three` into the controller, with the value 3. If `bindToController` is true, they will be
- *     coppied to the controller instead.
+ *     copied to the controller instead.
  *   - `bindToController` - `bool`: bind the locals to the controller, instead of passing them in
  *   - `resolve` - `{object=}`: Similar to locals, except it takes promises as values, and the
- *     toast will not open until all of the promises resolve.
+ *     dialog will not open until all of the promises resolve.
  *   - `controllerAs` - `{string=}`: An alias to assign the controller to on the scope.
  *   - `parent` - `{element=}`: The element to append the dialog to. Defaults to appending
  *     to the root element of the application.
@@ -260,18 +262,18 @@ function MdDialogProvider($$interimElementProvider) {
   var alertDialogMethods = ['title', 'content', 'ariaLabel', 'ok'];
 
   advancedDialogOptions.$inject = ["$mdDialog"];
-  dialogDefaultOptions.$inject = ["$timeout", "$rootElement", "$compile", "$animate", "$mdAria", "$mdUtil", "$mdConstant", "$mdTheming", "$$rAF", "$q", "$mdDialog"];
+  dialogDefaultOptions.$inject = ["$timeout", "$rootElement", "$compile", "$animate", "$mdAria", "$document", "$mdUtil", "$mdConstant", "$mdTheming", "$$rAF", "$q", "$mdDialog"];
   return $$interimElementProvider('$mdDialog')
     .setDefaults({
-      methods: ['hasBackdrop', 'clickOutsideToClose', 'escapeToClose', 'targetEvent'],
+      methods: ['disableParentScroll', 'hasBackdrop', 'clickOutsideToClose', 'escapeToClose', 'targetEvent'],
       options: dialogDefaultOptions
     })
     .addPreset('alert', {
-      methods: alertDialogMethods,
+      methods: ['title', 'content', 'ariaLabel', 'ok'],
       options: advancedDialogOptions
     })
     .addPreset('confirm', {
-      methods: alertDialogMethods.concat('cancel'),
+      methods: ['title', 'content', 'ariaLabel', 'ok', 'cancel'],
       options: advancedDialogOptions
     });
 
@@ -279,7 +281,7 @@ function MdDialogProvider($$interimElementProvider) {
   function advancedDialogOptions($mdDialog) {
     return {
       template: [
-        '<md-dialog aria-label="{{dialog.label}}">',
+        '<md-dialog aria-label="{{ dialog.ariaLabel }}">',
           '<md-content>',
             '<h2>{{ dialog.title }}</h2>',
             '<p>{{ dialog.content }}</p>',
@@ -308,7 +310,7 @@ function MdDialogProvider($$interimElementProvider) {
   }
 
   /* @ngInject */
-  function dialogDefaultOptions($timeout, $rootElement, $compile, $animate, $mdAria,
+  function dialogDefaultOptions($timeout, $rootElement, $compile, $animate, $mdAria, $document,
                                 $mdUtil, $mdConstant, $mdTheming, $$rAF, $q, $mdDialog) {
     return {
       hasBackdrop: true,
@@ -318,10 +320,12 @@ function MdDialogProvider($$interimElementProvider) {
       clickOutsideToClose: true,
       escapeToClose: true,
       targetEvent: null,
+      disableParentScroll: true,
       transformTemplate: function(template) {
         return '<div class="md-dialog-container">' + template + '</div>';
       }
     };
+
 
     // On show method for dialogs
     function onShow(scope, element, options) {
@@ -334,15 +338,20 @@ function MdDialogProvider($$interimElementProvider) {
       configureAria(element.find('md-dialog'));
 
       if (options.hasBackdrop) {
-        options.backdrop = $compile('<md-backdrop class="md-opaque ng-enter">')(scope);
+        options.backdrop = angular.element('<md-backdrop class="md-dialog-backdrop md-opaque">');
         $mdTheming.inherit(options.backdrop, options.parent);
-        $animate.enter(options.backdrop, options.parent, null);
+        $animate.enter(options.backdrop, options.parent);
+      }
+
+      if (options.disableParentScroll) {
+        options.oldOverflowStyle = options.parent.css('overflow');
+        options.parent.css('overflow', 'hidden');
       }
 
       return dialogPopIn(
         element,
         options.parent,
-        options.popInTarget.length && options.popInTarget
+        options.popInTarget && options.popInTarget.length && options.popInTarget
       )
       .then(function() {
         if (options.escapeToClose) {
@@ -385,7 +394,10 @@ function MdDialogProvider($$interimElementProvider) {
 
       if (options.backdrop) {
         $animate.leave(options.backdrop);
-        element.data('backdrop', undefined);
+      }
+      if (options.disableParentScroll) {
+        options.parent.css('overflow', options.oldOverflowStyle);
+        $document[0].removeEventListener('scroll', options.captureScroll, true);
       }
       if (options.escapeToClose) {
         $rootElement.off('keyup', options.rootElementKeyupCallback);
@@ -393,7 +405,12 @@ function MdDialogProvider($$interimElementProvider) {
       if (options.clickOutsideToClose) {
         element.off('click', options.dialogClickOutsideCallback);
       }
-      return $animate.leave(element).then(function() {
+      return dialogPopOut(
+        element,
+        options.parent,
+        options.popInTarget && options.popInTarget.length && options.popInTarget
+      ).then(function() {
+        options.scope.$destroy();
         element.remove();
         options.popInTarget && options.popInTarget.focus();
       });
@@ -419,45 +436,58 @@ function MdDialogProvider($$interimElementProvider) {
       });
     }
 
-    function dialogPopIn(element, parentElement, clickElement) {
-      var deferred = $q.defer();
-      parentElement.append(element);
+    function dialogPopIn(container, parentElement, clickElement) {
+      var dialogEl = container.find('md-dialog');
 
-      var startPos;
-      if (clickElement) {
-        var clickRect = clickElement[0].getBoundingClientRect();
-        startPos = 'translate3d(' +
-          (clickRect.left - element[0].offsetWidth / 2) + 'px,' +
-          (clickRect.top - element[0].offsetHeight / 2) + 'px,' +
-          '0) scale(0.2)';
-      } else {
-        startPos = 'translate3d(0,100%,0) scale(0.5)';
-      }
-
-      element
-        .css($mdConstant.CSS.TRANSFORM, startPos)
-        .css('opacity', 0);
+      parentElement.append(container);
+      transformToClickElement(dialogEl, clickElement);
 
       $$rAF(function() {
-        $$rAF(function() {
-          element
-          .addClass('md-active')
-          .css($mdConstant.CSS.TRANSFORM, '')
-          .css('opacity', '')
-          .on($mdConstant.CSS.TRANSITIONEND, finished);
-        });
+        dialogEl.addClass('transition-in')
+          .css($mdConstant.CSS.TRANSFORM, '');
       });
 
+      return dialogTransitionEnd(dialogEl);
+    }
+
+    function dialogPopOut(container, parentElement, clickElement) {
+      var dialogEl = container.find('md-dialog');
+
+      dialogEl.addClass('transition-out').removeClass('transition-in');
+      transformToClickElement(dialogEl, clickElement);
+
+      return dialogTransitionEnd(dialogEl);
+    }
+
+    function transformToClickElement(dialogEl, clickElement) {
+      if (clickElement) {
+        var clickRect = clickElement[0].getBoundingClientRect();
+        var dialogRect = dialogEl[0].getBoundingClientRect();
+
+        var scaleX = Math.min(0.5, clickRect.width / dialogRect.width);
+        var scaleY = Math.min(0.5, clickRect.height / dialogRect.height);
+
+        dialogEl.css($mdConstant.CSS.TRANSFORM, 'translate3d(' +
+          (-dialogRect.left + clickRect.left + clickRect.width/2 - dialogRect.width/2) + 'px,' +
+          (-dialogRect.top + clickRect.top + clickRect.height/2 - dialogRect.height/2) + 'px,' +
+          '0) scale(' + scaleX + ',' + scaleY + ')'
+        );
+      }
+    }
+
+    function dialogTransitionEnd(dialogEl) {
+      var deferred = $q.defer();
+      dialogEl.on($mdConstant.CSS.TRANSITIONEND, finished);
       function finished(ev) {
         //Make sure this transitionend didn't bubble up from a child
-        if (ev.target === element[0]) {
-          element.off($mdConstant.CSS.TRANSITIONEND, finished);
+        if (ev.target === dialogEl[0]) {
+          dialogEl.off($mdConstant.CSS.TRANSITIONEND, finished);
           deferred.resolve();
         }
       }
-
       return deferred.promise;
     }
+
   }
 }
 MdDialogProvider.$inject = ["$$interimElementProvider"];

@@ -4,6 +4,7 @@ angular.module("nycOpen", ["ngMaterial"]).controller("appController", ["$scope",
         url: "http://data.cityofnewyork.us/resource/erm2-nwe9.json?$limit=0"
     }
 
+    $scope.columns = ['created_date', 'complaint_type', 'agency', 'descriptor', 'incident_address', 'borough', 'incident_zip', 'community_board', 'status'];
     $scope.boards = {"Bronx": {start: 1, end: 12}, "Brooklyn": {start: 1, end: 18}, "Manhattan": {start: 1, end: 14}, "Queens": {start: 1, end: 18}, "Staten Island": {start: 1, end: 3}};
 
     $scope.agencies = getAgencies();
@@ -17,6 +18,9 @@ angular.module("nycOpen", ["ngMaterial"]).controller("appController", ["$scope",
 
     $scope.page = 1;
 
+    $scope.sortColumn = "created_date";
+    $scope.sortDirection = "desc";
+
 
     //Initialize arrays
     $scope.boroughs = [];
@@ -29,67 +33,14 @@ angular.module("nycOpen", ["ngMaterial"]).controller("appController", ["$scope",
 
     //Update the valid dates for the datepicker
     $("#datePicker").on("apply.daterangepicker", function (ev, picker) {
-        $scope.dateSpanStart = picker.startDate;
-        $scope.dateSpanEnd = picker.endDate;
+        console.log(picker);
+
+        $scope.dateSpanStart = moment.utc(picker.startDate);
+        $scope.dateSpanStart.startOf("day");
+
+        $scope.dateSpanEnd = moment.utc(picker.endDate);
+        $scope.dateSpanEnd.endOf("day");
     })
-
-    //Initialize the sorting for the table
-    $("#mainTable th").each(function () {
-        var link = $(this).attr("tdLink");
-
-        $(this).click(function () {
-            if($scope.tableSortColumn === link){
-                $scope.sortSwitch *= -1;
-            }else $scope.sortSwitch = 1;
-
-            $scope.tableSortColumn = link;
-
-            $("#mainTable th").each(function () {
-                $(this).find("#iconSpan").remove();
-            })
-
-            var iconSpan = document.createElement("span");
-            iconSpan.id = "iconSpan";
-
-            $(iconSpan).attr("flex", "");
-
-            iconSpan.style.float = "right";
-
-            if($scope.sortSwitch === 1)
-                iconSpan.className = "glyphicon glyphicon-chevron-down";
-            else iconSpan.className = "glyphicon glyphicon-chevron-up";
-
-            $(this).append($(iconSpan));
-
-            $scope.data.sort(comparator);
-
-            $scope.resultRows = getTableArray($scope.data);
-
-            $scope.$apply();
-
-            function comparator(a, b){
-                if(a[link].toLowerCase() < b[link].toLowerCase()){
-                    return -1 * $scope.sortSwitch;
-                }else if(a[link].toLowerCase() > b[link].toLowerCase()){
-                    return 1 * $scope.sortSwitch;
-                }else return 0;
-            }
-        });
-});
-
-    //Initialize the pagination clicking and updating
-    $("#paginatorList li").each(function () {
-        $(this).click(function () {
-            $("#paginatorList li").each(function () {
-                $(this).removeAttr("class");
-            });
-
-            $(this).attr("class", "active");
-
-            $scope.page = $(this).find("a").html();
-            $scope.updateQuery();
-        });
-    });
 
     //Updates the CB Number with the correct ones for that Borough
     $scope.updateBoard = function () {
@@ -117,10 +68,49 @@ angular.module("nycOpen", ["ngMaterial"]).controller("appController", ["$scope",
         $scope.statusSelect = "";
     };
 
+    $scope.getPagesArray = function () {
+        var array = [];
+
+        if($scope.resultRows) {
+            for (var i = 0; i < Math.ceil($scope.dataLengthRaw / parseFloat($scope.limit)); i++) {
+                if(i > 0 && i > $scope.page - 5 && i < $scope.page + 5) {
+                    array.push(i);
+                }
+            }
+        }
+
+        return array;
+    }
+
+    $scope.setPage = function (page) {
+        console.log(page);
+
+        if(page >= 1 && page < Math.ceil($scope.dataLengthRaw / parseFloat($scope.limit))) {
+            $scope.page = page;
+
+            console.log(page);
+
+            $scope.updateQuery();
+        }
+    }
+
     //Constructs the url and then goes to the CSV link on Socrata
     $scope.exportData = function () {
         var url = ("http://data.cityofnewyork.us/resource/erm2-nwe9.csv" + constructURL("NOLIMIT"));
         window.location = url;
+    }
+
+    $scope.columnClick = function (column) {
+        if($scope.sortColumn === column){
+            $scope.sortDirection = $scope.sortDirection === "asc" ? "desc" : "asc";
+        } else {
+            $scope.sortDirection = "asc";
+        }
+
+        $scope.sortColumn = column;
+
+        $scope.page = 1;
+        $scope.updateQuery(true);
     }
 
     //For the filter button click
@@ -128,21 +118,23 @@ angular.module("nycOpen", ["ngMaterial"]).controller("appController", ["$scope",
         $("#paginatorList").css({visibility: "hidden"});
 
         $scope.page = 1;
-        $scope.resetPagination();
+
+        $scope.sortColumn = "created_date";
+        $scope.sortDirection = "desc";
 
         $scope.updateQuery();
     }
 
     //Update the data in the table with current criteria
-    $scope.updateQuery = function () {
+    $scope.updateQuery = function (order) {
 
         var scope = "http://data.cityofnewyork.us/resource/erm2-nwe9.json";
 
-        var url = scope + constructURL();
+        var url = scope + constructURL(false, true);
 
         console.log(url);
 
-        $("#loadingIcon").removeAttr("style");
+        $("#loadingIcon").css({display: "block"});
         $("#loadingIcon").parent().css({height: "70%"});
 
         $("#mainTable").css({display: "none"});
@@ -156,172 +148,44 @@ angular.module("nycOpen", ["ngMaterial"]).controller("appController", ["$scope",
             for(var i = 0; i < data.length; i++){
                 var newRow = {};
 
-                newRow.createdDate = new Date(data[i].created_date).toDateString().substr(4, data[i].created_date.length-4);
+                var createdDate = new Date(data[i].created_date);
+
+                newRow.createdDate = createdDate.getTime() + createdDate.getTimezoneOffset() * 60000;
                 newRow.complaintType = data[i].complaint_type;
                 newRow.agency = data[i].agency;
                 newRow.descriptor = data[i].descriptor;
                 newRow.incidentAddress = data[i].incident_address;
                 newRow.incidentZip = data[i].incident_zip;
                 newRow.borough = data[i].borough;
-                newRow.communityBoard = data[i].community_board;
+                newRow.communityBoard = data[i].community_board.split(" ")[0];
                 newRow.status = data[i].status;
 
                 $scope.resultRows.push(newRow);
             }
 
             //Getting the actual amount of rows in the database for this query
-            $http.get(url + "&$select=COUNT(unique_key)").success(function (uniqueData) {
+            $http.get(scope + constructURL(false, false) + "&$select=COUNT(unique_key)").success(function (uniqueData) {
                 if (uniqueData[0] && uniqueData[0].count_unique_key) {
                     $scope.dataLength = uniqueData[0].count_unique_key.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
                     $scope.dataLengthRaw = uniqueData[0].count_unique_key;
                 }
-
-                $("#paginatorList").empty();
-
-                $scope.maxPage = Math.ceil($scope.dataLengthRaw / $scope.limit);
-
-                //Updating the pagination
-                for(var i = 1; i <= $scope.maxPage; i++){
-                    var li = document.createElement("li");
-
-                    $(li).click(function () {
-                        $("#paginatorList li").each(function () {
-                            $(this).removeAttr("class");
-                        });
-
-                        $(this).attr("class", "active");
-
-                        $scope.page = $(this).find("a").html();
-                        $scope.updateQuery();
-                    });
-
-                    var a = document.createElement("a");
-                    a.innerHTML = (i).toString();
-
-                    li.appendChild(a);
-
-                    $("#paginatorList").append($(li));
-                }
-
-                var prevPage = document.createElement("li");
-                var prevA = document.createElement("a");
-
-                prevPage.className = "specialPage";
-                prevPage.id = "prevPage";
-                prevA.className = "glyphicon glyphicon-chevron-left";
-
-                prevPage.appendChild(prevA);
-
-
-                $(prevPage).click(function () {
-                    if($scope.page > 1){
-                        $scope.page = parseInt($scope.page) - 1;
-                        $scope.updateQuery();
-                    }
-                });
-
-                var nextPage = document.createElement("li");
-                var nextA = document.createElement("a");
-
-                nextPage.className = "specialPage";
-                nextPage.id = "nextPage";
-                nextA.className = "glyphicon glyphicon-chevron-right";
-
-                nextPage.appendChild(nextA);
-
-                $(nextPage).click(function () {
-                    if($scope.page < (Math.ceil($scope.dataLengthRaw / $scope.limit))){
-                        $scope.page = parseInt($scope.page) + 1;
-                        $scope.updateQuery();
-                    }
-                });
-
-                $("#paginatorList").prepend(prevPage);
-                $("#paginatorList").append(nextPage);
-
-
-                $scope.renderPagination();
 
                 $("#loadingIcon").css({display: "none"});
                 $("#loadingIcon").parent().removeAttr("style");
 
                 $("#mainTable").css({display: "block"});
             });
-});
-}
-
-    //Updates the pagination to show the correct amount of page #
-    $scope.renderPagination = function () {
-        var pageLimit = 10;
-        var pageRadius = pageLimit / 2;
-
-        var page = parseInt($scope.page);
-
-        $("#paginatorList").css({visibility: "hidden"});
-
-        $("#paginatorList li").each(function () {
-            var i = $(this).find("a").html();
-
-            if(i == $scope.page){
-                $(this).attr("class", "active");
-            }
-
-            if((i >= page - pageRadius && i <= page + pageRadius) || ($(this).attr("class") === "specialPage")){
-                $(this).css({display: ""});
-            }else $(this).css({display: "none"});
         });
-
-        console.log("Page : " + $scope.page);
-
-        if ($scope.page == $scope.maxPage) {
-            $("#nextPage").remove();
-        };
-
-        if ($scope.page == 1) {
-            console.log("Trying to remove prevPage");
-            $("#prevPage").remove();
-        };
-
-        $("#paginatorList").css({visibility: "visible"});
-    }
-
-    //Makes the pagination back to 10 count
-    $scope.resetPagination = function(){
-        $("#paginatorList li").each(function () {
-            $(this).remove();
-        })
-
-        for(var i = 1; i <= 10; i++){
-            var li = document.createElement("li");
-
-            $(li).click(function () {
-                $("#paginatorList li").each(function () {
-                    $(this).removeAttr("class");
-                });
-
-                $(this).attr("class", "active");
-
-                $scope.page = $(this).find("a").html();
-                $scope.updateQuery();
-            });
-
-            var a = document.createElement("a");
-            a.innerHTML = i.toString();
-
-            li.appendChild(a);
-
-            $("#paginatorList").append($(li));
-        }
     }
 
     //Returns the parameters for the DB
-    function constructURL(noLimit){
+    function constructURL(noLimit, order){
         var scope = "";
         var parameters = "?"
 
         if(!noLimit) {
             parameters += "$limit=" + $scope.limit + "&";
-        }else{}
+        }
 
 
         var where ="$where=";
@@ -378,7 +242,7 @@ angular.module("nycOpen", ["ngMaterial"]).controller("appController", ["$scope",
             where += "status='" + $scope.statusSelect + "'";
 
             conditionCounter++;
-        }1
+        }
 
 
         if($scope.complaintTypeSelect){
@@ -399,6 +263,14 @@ angular.module("nycOpen", ["ngMaterial"]).controller("appController", ["$scope",
             parameters += "$offset=" + ($scope.page-1) * $scope.limit + "&";
         }
 
+        if(order && $scope.sortColumn && $scope.sortDirection) {
+            if(conditionCounter > 0) {
+                parameters += "&";
+            }
+
+            parameters += "$order=" + $scope.sortColumn + " " + $scope.sortDirection.toUpperCase() + "&";
+        }
+
 
         if(conditionCounter > 0)
             parameters += where;
@@ -408,194 +280,199 @@ angular.module("nycOpen", ["ngMaterial"]).controller("appController", ["$scope",
         return url;
     }
 
-}]);
+}])
+    .filter("UnderscoreFilter", function () {
+        return function (data) {
+            return data.replace(new RegExp('_', 'g'), ' ');
+        }
+    });
 
 function getAgencies(){
     return [
-    "3-1-1"
-    ,
+        "3-1-1"
+        ,
 
-    "ACS"
-    ,
+        "ACS"
+        ,
 
-    "AJC"
-    ,
+        "AJC"
+        ,
 
-    "ART"
-    ,
+        "ART"
+        ,
 
-    "CAU"
-    ,
+        "CAU"
+        ,
 
-    "CCRB"
-    ,
+        "CCRB"
+        ,
 
-    "CHALL"
-    ,
+        "CHALL"
+        ,
 
-    "COIB"
-    ,
+        "COIB"
+        ,
 
-    "CWI"
-    ,
+        "CWI"
+        ,
 
-    "DCA"
-    ,
+        "DCA"
+        ,
 
-    "DCAS"
-    ,
+        "DCAS"
+        ,
 
-    "DCLA"
-    ,
+        "DCLA"
+        ,
 
-    "DCP"
-    ,
+        "DCP"
+        ,
 
-    "DEP"
-    ,
+        "DEP"
+        ,
 
-    "DFTA"
-    ,
+        "DFTA"
+        ,
 
-    "DHS"
-    ,
+        "DHS"
+        ,
 
-    "DOB"
-    ,
+        "DOB"
+        ,
 
-    "DOC"
-    ,
+        "DOC"
+        ,
 
-    "DOE"
-    ,
+        "DOE"
+        ,
 
-    "DOF"
-    ,
+        "DOF"
+        ,
 
-    "DOHMH"
-    ,
+        "DOHMH"
+        ,
 
-    "DOITT"
-    ,
+        "DOITT"
+        ,
 
-    "DOP"
-    ,
+        "DOP"
+        ,
 
-    "DORIS"
-    ,
+        "DORIS"
+        ,
 
-    "DOT"
-    ,
+        "DOT"
+        ,
 
-    "DPR"
-    ,
+        "DPR"
+        ,
 
-    "DSNY"
-    ,
+        "DSNY"
+        ,
 
-    "DV"
-    ,
+        "DV"
+        ,
 
-    "DYCD"
-    ,
+        "DYCD"
+        ,
 
-    "EDC"
-    ,
+        "EDC"
+        ,
 
-    "EMTF"
-    ,
+        "EMTF"
+        ,
 
-    "FDNY"
-    ,
+        "FDNY"
+        ,
 
-    "FUND"
-    ,
+        "FUND"
+        ,
 
-    "HPD"
-    ,
+        "HPD"
+        ,
 
-    "HRA"
-    ,
+        "HRA"
+        ,
 
-    "LAW"
-    ,
+        "LAW"
+        ,
 
-    "LOFT"
-    ,
+        "LOFT"
+        ,
 
-    "MOC"
-    ,
+        "MOC"
+        ,
 
-    "MOFTB"
-    ,
+        "MOFTB"
+        ,
 
-    "MOIA"
-    ,
+        "MOIA"
+        ,
 
-    "MOPD"
-    ,
+        "MOPD"
+        ,
 
-    "MOVA"
-    ,
+        "MOVA"
+        ,
 
-    "NYCERS"
-    ,
+        "NYCERS"
+        ,
 
-    "NYCHA"
-    ,
+        "NYCHA"
+        ,
 
-    "NYCOOA"
-    ,
+        "NYCOOA"
+        ,
 
-    "NYCPPF"
-    ,
+        "NYCPPF"
+        ,
 
-    "NYCSERVICE"
-    ,
+        "NYCSERVICE"
+        ,
 
-    "NYPD"
-    ,
+        "NYPD"
+        ,
 
-    "OAE"
-    ,
+        "OAE"
+        ,
 
-    "OATH"
-    ,
+        "OATH"
+        ,
 
-    "OCHIA"
-    ,
+        "OCHIA"
+        ,
 
-    "OCME"
-    ,
+        "OCME"
+        ,
 
-    "OEM"
-    ,
+        "OEM"
+        ,
 
-    "OMB"
-    ,
+        "OMB"
+        ,
 
-    "OPA"
-    ,
+        "OPA"
+        ,
 
-    "OPS"
-    ,
+        "OPS"
+        ,
 
-    "SBS"
-    ,
+        "SBS"
+        ,
 
-    "TFA"
-    ,
+        "TFA"
+        ,
 
-    "TLC"
-    ,
+        "TLC"
+        ,
 
-    "UNCC"
-    ,
+        "UNCC"
+        ,
 
-    "VAC"
-    ,
+        "VAC"
+        ,
 
-    "WF1"
+        "WF1"
 
     ]
 }
@@ -603,70 +480,70 @@ function getAgencies(){
 function getStatuses(){
     return [
 
-    "Assigned"
-    ,
+        "Assigned"
+        ,
 
-    "Cancelled"
-    ,
+        "Cancelled"
+        ,
 
-    "Closed"
-    ,
+        "Closed"
+        ,
 
-    "Closed - By Phone"
-    ,
+        "Closed - By Phone"
+        ,
 
-    "Closed - Email Sent"
-    ,
+        "Closed - Email Sent"
+        ,
 
-    "Closed - In-Person"
-    ,
+        "Closed - In-Person"
+        ,
 
-    "Closed - Insufficient Info"
-    ,
+        "Closed - Insufficient Info"
+        ,
 
-    "Closed - Letter Sent"
-    ,
+        "Closed - Letter Sent"
+        ,
 
-    "Closed - No Response Needed"
-    ,
+        "Closed - No Response Needed"
+        ,
 
-    "Closed - Other"
-    ,
+        "Closed - Other"
+        ,
 
-    "Closed - Testing"
-    ,
+        "Closed - Testing"
+        ,
 
-    "Draft"
-    ,
+        "Draft"
+        ,
 
-    "Email Sent"
-    ,
+        "Email Sent"
+        ,
 
-    "In Progress"
-    ,
+        "In Progress"
+        ,
 
-    "In Progress - Needs Approval"
-    ,
+        "In Progress - Needs Approval"
+        ,
 
-    "Open"
-    ,
+        "Open"
+        ,
 
-    "Pending"
-    ,
+        "Pending"
+        ,
 
-    "Started"
-    ,
+        "Started"
+        ,
 
-    "To Be Rerouted"
-    ,
+        "To Be Rerouted"
+        ,
 
-    "Unable To Respond"
-    ,
+        "Unable To Respond"
+        ,
 
-    "Unassigned"
-    ,
+        "Unassigned"
+        ,
 
-    "Unspecified"
+        "Unspecified"
 
     ];
 }
@@ -674,721 +551,721 @@ function getStatuses(){
 function getComplaintTypes(){
     return [
 
-    "Adopt-A-Basket"
-    ,
+        "Adopt-A-Basket"
+        ,
 
-    "Agency Issues"
-    ,
+        "Agency Issues"
+        ,
 
-    "Air Quality"
-    ,
+        "Air Quality"
+        ,
 
-    "Animal Abuse"
-    ,
+        "Animal Abuse"
+        ,
 
-    "Animal Facility - No Permit"
-    ,
+        "Animal Facility - No Permit"
+        ,
 
-    "Animal in a Park"
-    ,
+        "Animal in a Park"
+        ,
 
-    "APPLIANCE"
-    ,
+        "APPLIANCE"
+        ,
 
-    "Asbestos"
-    ,
+        "Asbestos"
+        ,
 
-    "Beach/Pool/Sauna Complaint"
-    ,
+        "Beach/Pool/Sauna Complaint"
+        ,
 
-    "Benefit Card Replacement"
-    ,
+        "Benefit Card Replacement"
+        ,
 
-    "BEST/Site Safety"
-    ,
+        "BEST/Site Safety"
+        ,
 
-    "Bike Rack Condition"
-    ,
+        "Bike Rack Condition"
+        ,
 
-    "Bike/Roller/Skate Chronic"
-    ,
+        "Bike/Roller/Skate Chronic"
+        ,
 
-    "Blocked Driveway"
-    ,
+        "Blocked Driveway"
+        ,
 
-    "Boilers"
-    ,
+        "Boilers"
+        ,
 
-    "Bottled Water"
-    ,
+        "Bottled Water"
+        ,
 
-    "Bridge Condition"
-    ,
+        "Bridge Condition"
+        ,
 
-    "Broken Muni Meter"
-    ,
+        "Broken Muni Meter"
+        ,
 
-    "Broken Parking Meter"
-    ,
+        "Broken Parking Meter"
+        ,
 
-    "Building Condition"
-    ,
+        "Building Condition"
+        ,
 
-    "Building/Use"
-    ,
+        "Building/Use"
+        ,
 
-    "Bus Stop Shelter Placement"
-    ,
+        "Bus Stop Shelter Placement"
+        ,
 
-    "Calorie Labeling"
-    ,
+        "Calorie Labeling"
+        ,
 
-    "City Vehicle Placard Complaint"
-    ,
+        "City Vehicle Placard Complaint"
+        ,
 
-    "Collection Truck Noise"
-    ,
+        "Collection Truck Noise"
+        ,
 
-    "Comment"
-    ,
+        "Comment"
+        ,
 
-    "Complaint"
-    ,
+        "Complaint"
+        ,
 
-    "Compliment"
-    ,
+        "Compliment"
+        ,
 
-    "CONSTRUCTION"
-    ,
+        "CONSTRUCTION"
+        ,
 
-    "Consumer Complaint"
-    ,
+        "Consumer Complaint"
+        ,
 
-    "Cranes and Derricks"
-    ,
+        "Cranes and Derricks"
+        ,
 
-    "Curb Condition"
-    ,
+        "Curb Condition"
+        ,
 
-    "Damaged Tree"
-    ,
+        "Damaged Tree"
+        ,
 
-    "DCA / DOH New License Application Request"
-    ,
+        "DCA / DOH New License Application Request"
+        ,
 
-    "DCA Literature Request"
-    ,
+        "DCA Literature Request"
+        ,
 
-    "Dead Tree"
-    ,
+        "Dead Tree"
+        ,
 
-    "DEP Literature Request"
-    ,
+        "DEP Literature Request"
+        ,
 
-    "Derelict Bicycle"
-    ,
+        "Derelict Bicycle"
+        ,
 
-    "Derelict Vehicle"
-    ,
+        "Derelict Vehicle"
+        ,
 
-    "Derelict Vehicles"
-    ,
+        "Derelict Vehicles"
+        ,
 
-    "DFTA Literature Request"
-    ,
+        "DFTA Literature Request"
+        ,
 
-    "DHS Income Savings Requirement"
-    ,
+        "DHS Income Savings Requirement"
+        ,
 
-    "Dirty Conditions"
-    ,
+        "Dirty Conditions"
+        ,
 
-    "Discipline and Suspension"
-    ,
+        "Discipline and Suspension"
+        ,
 
-    "Disorderly Youth"
-    ,
+        "Disorderly Youth"
+        ,
 
-    "DOE Complaint or Compliment"
-    ,
+        "DOE Complaint or Compliment"
+        ,
 
-    "DOF Literature Request"
-    ,
+        "DOF Literature Request"
+        ,
 
-    "DOF Parking - Payment Issue"
-    ,
+        "DOF Parking - Payment Issue"
+        ,
 
-    "DOF Parking - Request Status"
-    ,
+        "DOF Parking - Request Status"
+        ,
 
-    "DOF Parking - Tax Exemption"
-    ,
+        "DOF Parking - Tax Exemption"
+        ,
 
-    "DOF Property - City Rebate"
-    ,
+        "DOF Property - City Rebate"
+        ,
 
-    "DOF Property - Payment Issue"
-    ,
+        "DOF Property - Payment Issue"
+        ,
 
-    "DOF Property - Reduction Issue"
-    ,
+        "DOF Property - Reduction Issue"
+        ,
 
-    "DOF Property - RPIE Issue"
-    ,
+        "DOF Property - RPIE Issue"
+        ,
 
-    "DOOR/WINDOW"
-    ,
+        "DOOR/WINDOW"
+        ,
 
-    "DOT Literature Request"
-    ,
+        "DOT Literature Request"
+        ,
 
-    "DPR Internal"
-    ,
+        "DPR Internal"
+        ,
 
-    "DPR Literature Request"
-    ,
+        "DPR Literature Request"
+        ,
 
-    "Drinking"
-    ,
+        "Drinking"
+        ,
 
-    "Drinking Water"
-    ,
+        "Drinking Water"
+        ,
 
-    "DWD"
-    ,
+        "DWD"
+        ,
 
-    "EAP Inspection - F59"
-    ,
+        "EAP Inspection - F59"
+        ,
 
-    "ELECTRIC"
-    ,
+        "ELECTRIC"
+        ,
 
-    "Electrical"
-    ,
+        "Electrical"
+        ,
 
-    "ELEVATOR"
-    ,
+        "ELEVATOR"
+        ,
 
-    "Emergency Response Team (ERT)"
-    ,
+        "Emergency Response Team (ERT)"
+        ,
 
-    "Ferry Complaint"
-    ,
+        "Ferry Complaint"
+        ,
 
-    "Ferry Inquiry"
-    ,
+        "Ferry Inquiry"
+        ,
 
-    "Ferry Permit"
-    ,
+        "Ferry Permit"
+        ,
 
-    "Fire Alarm - Addition"
-    ,
+        "Fire Alarm - Addition"
+        ,
 
-    "Fire Alarm - Modification"
-    ,
+        "Fire Alarm - Modification"
+        ,
 
-    "Fire Alarm - New System"
-    ,
+        "Fire Alarm - New System"
+        ,
 
-    "Fire Alarm - Reinspection"
-    ,
+        "Fire Alarm - Reinspection"
+        ,
 
-    "Fire Alarm - Replacement"
-    ,
+        "Fire Alarm - Replacement"
+        ,
 
-    "Fire Safety Director - F58"
-    ,
+        "Fire Safety Director - F58"
+        ,
 
-    "FLOORING/STAIRS"
-    ,
+        "FLOORING/STAIRS"
+        ,
 
-    "Food Establishment"
-    ,
+        "Food Establishment"
+        ,
 
-    "Food Poisoning"
-    ,
+        "Food Poisoning"
+        ,
 
-    "Forensic Engineering"
-    ,
+        "Forensic Engineering"
+        ,
 
-    "For Hire Vehicle Complaint"
-    ,
+        "For Hire Vehicle Complaint"
+        ,
 
-    "For Hire Vehicle Report"
-    ,
+        "For Hire Vehicle Report"
+        ,
 
-    "Forms"
-    ,
+        "Forms"
+        ,
 
-    "Found Property"
-    ,
+        "Found Property"
+        ,
 
-    "Gas Station Discharge Lines"
-    ,
+        "Gas Station Discharge Lines"
+        ,
 
-    "GENERAL"
-    ,
+        "GENERAL"
+        ,
 
-    "GENERAL CONSTRUCTION"
-    ,
+        "GENERAL CONSTRUCTION"
+        ,
 
-    "General Construction/Plumbing"
-    ,
+        "General Construction/Plumbing"
+        ,
 
-    "Graffiti"
-    ,
+        "Graffiti"
+        ,
 
-    "Harboring Bees/Wasps"
-    ,
+        "Harboring Bees/Wasps"
+        ,
 
-    "Hazardous Materials"
-    ,
+        "Hazardous Materials"
+        ,
 
-    "Hazmat Storage/Use"
-    ,
+        "Hazmat Storage/Use"
+        ,
 
-    "Health"
-    ,
+        "Health"
+        ,
 
-    "HEAT/HOT WATER"
-    ,
+        "HEAT/HOT WATER"
+        ,
 
-    "HEATING"
-    ,
+        "HEATING"
+        ,
 
-    "Highway Condition"
-    ,
+        "Highway Condition"
+        ,
 
-    "Highway Sign - Damaged"
-    ,
+        "Highway Sign - Damaged"
+        ,
 
-    "Highway Sign - Dangling"
-    ,
+        "Highway Sign - Dangling"
+        ,
 
-    "Highway Sign - Missing"
-    ,
+        "Highway Sign - Missing"
+        ,
 
-    "Home Care Provider Complaint"
-    ,
+        "Home Care Provider Complaint"
+        ,
 
-    "Homeless Encampment"
-    ,
+        "Homeless Encampment"
+        ,
 
-    "Homeless Person Assistance"
-    ,
+        "Homeless Person Assistance"
+        ,
 
-    "HPD Literature Request"
-    ,
+        "HPD Literature Request"
+        ,
 
-    "IGR"
-    ,
+        "IGR"
+        ,
 
-    "Illegal Animal Kept as Pet"
-    ,
+        "Illegal Animal Kept as Pet"
+        ,
 
-    "Illegal Animal Sold"
-    ,
+        "Illegal Animal Sold"
+        ,
 
-    "Illegal Animal - Sold/Kept"
-    ,
+        "Illegal Animal - Sold/Kept"
+        ,
 
-    "Illegal Fireworks"
-    ,
+        "Illegal Fireworks"
+        ,
 
-    "Illegal Parking"
-    ,
+        "Illegal Parking"
+        ,
 
-    "Illegal Tree Damage"
-    ,
+        "Illegal Tree Damage"
+        ,
 
-    "Indoor Air Quality"
-    ,
+        "Indoor Air Quality"
+        ,
 
-    "Indoor Sewage"
-    ,
+        "Indoor Sewage"
+        ,
 
-    "Industrial Waste"
-    ,
+        "Industrial Waste"
+        ,
 
-    "Interior Demo"
-    ,
+        "Interior Demo"
+        ,
 
-    "Internal Code"
-    ,
+        "Internal Code"
+        ,
 
-    "Investigations and Discipline (IAD)"
-    ,
+        "Investigations and Discipline (IAD)"
+        ,
 
-    "Invitation"
-    ,
+        "Invitation"
+        ,
 
-    "Lead"
-    ,
+        "Lead"
+        ,
 
-    "Legal Services Provider Complaint"
-    ,
+        "Legal Services Provider Complaint"
+        ,
 
-    "Lifeguard"
-    ,
+        "Lifeguard"
+        ,
 
-    "Literature Request"
-    ,
+        "Literature Request"
+        ,
 
-    "Litter Basket / Request"
-    ,
+        "Litter Basket / Request"
+        ,
 
-    "Lost Property"
-    ,
+        "Lost Property"
+        ,
 
-    "Maintenance or Facility"
-    ,
+        "Maintenance or Facility"
+        ,
 
-    "Micro Switch"
-    ,
+        "Micro Switch"
+        ,
 
-    "Misc. Comments"
-    ,
+        "Misc. Comments"
+        ,
 
-    "Miscellaneous Categories"
-    ,
+        "Miscellaneous Categories"
+        ,
 
-    "Missed Collection (All Materials)"
-    ,
+        "Missed Collection (All Materials)"
+        ,
 
-    "Mold"
-    ,
+        "Mold"
+        ,
 
-    "Municipal Parking Facility"
-    ,
+        "Municipal Parking Facility"
+        ,
 
-    "No Child Left Behind"
-    ,
+        "No Child Left Behind"
+        ,
 
-    "Noise"
-    ,
+        "Noise"
+        ,
 
-    "Noise - Commercial"
-    ,
+        "Noise - Commercial"
+        ,
 
-    "Noise - Helicopter"
-    ,
+        "Noise - Helicopter"
+        ,
 
-    "Noise - House of Worship"
-    ,
+        "Noise - House of Worship"
+        ,
 
-    "Noise - Park"
-    ,
+        "Noise - Park"
+        ,
 
-    "Noise - Street/Sidewalk"
-    ,
+        "Noise - Street/Sidewalk"
+        ,
 
-    "Noise Survey"
-    ,
+        "Noise Survey"
+        ,
 
-    "Noise - Vehicle"
-    ,
+        "Noise - Vehicle"
+        ,
 
-    "NONCONST"
-    ,
+        "NONCONST"
+        ,
 
-    "Non-Residential Heat"
-    ,
+        "Non-Residential Heat"
+        ,
 
-    "OEM Disabled Vehicle"
-    ,
+        "OEM Disabled Vehicle"
+        ,
 
-    "OEM Literature Request"
-    ,
+        "OEM Literature Request"
+        ,
 
-    "Open Flame Permit"
-    ,
+        "Open Flame Permit"
+        ,
 
-    "Opinion for the Mayor"
-    ,
+        "Opinion for the Mayor"
+        ,
 
-    "Other Enforcement"
-    ,
+        "Other Enforcement"
+        ,
 
-    "OUTSIDE BUILDING"
-    ,
+        "OUTSIDE BUILDING"
+        ,
 
-    "Overflowing Litter Baskets"
-    ,
+        "Overflowing Litter Baskets"
+        ,
 
-    "Overflowing Recycling Baskets"
-    ,
+        "Overflowing Recycling Baskets"
+        ,
 
-    "Overgrown Tree/Branches"
-    ,
+        "Overgrown Tree/Branches"
+        ,
 
-    "PAINT - PLASTER"
-    ,
+        "PAINT - PLASTER"
+        ,
 
-    "PAINT/PLASTER"
-    ,
+        "PAINT/PLASTER"
+        ,
 
-    "Panhandling"
-    ,
+        "Panhandling"
+        ,
 
-    "Parent Leadership"
-    ,
+        "Parent Leadership"
+        ,
 
-    "Parking Card"
-    ,
+        "Parking Card"
+        ,
 
-    "Plant"
-    ,
+        "Plant"
+        ,
 
-    "PLUMBING"
-    ,
+        "PLUMBING"
+        ,
 
-    "Poison Ivy"
-    ,
+        "Poison Ivy"
+        ,
 
-    "Portable Toilet"
-    ,
+        "Portable Toilet"
+        ,
 
-    "Posting Advertisement"
-    ,
+        "Posting Advertisement"
+        ,
 
-    "Public Assembly"
-    ,
+        "Public Assembly"
+        ,
 
-    "Public Assembly - Temporary"
-    ,
+        "Public Assembly - Temporary"
+        ,
 
-    "Public Payphone Complaint"
-    ,
+        "Public Payphone Complaint"
+        ,
 
-    "Public Toilet"
-    ,
+        "Public Toilet"
+        ,
 
-    "Radioactive Material"
-    ,
+        "Radioactive Material"
+        ,
 
-    "Rangehood"
-    ,
+        "Rangehood"
+        ,
 
-    "Recycling Enforcement"
-    ,
+        "Recycling Enforcement"
+        ,
 
-    "Registration and Transfers"
-    ,
+        "Registration and Transfers"
+        ,
 
-    "Request for Information"
-    ,
+        "Request for Information"
+        ,
 
-    "Request Xmas Tree Collection"
-    ,
+        "Request Xmas Tree Collection"
+        ,
 
-    "Rodent"
-    ,
+        "Rodent"
+        ,
 
-    "Root/Sewer/Sidewalk Condition"
-    ,
+        "Root/Sewer/Sidewalk Condition"
+        ,
 
-    "SAFETY"
-    ,
+        "SAFETY"
+        ,
 
-    "Sanitation Condition"
-    ,
+        "Sanitation Condition"
+        ,
 
-    "Scaffold Safety"
-    ,
+        "Scaffold Safety"
+        ,
 
-    "School Maintenance"
-    ,
+        "School Maintenance"
+        ,
 
-    "SCRIE"
-    ,
+        "SCRIE"
+        ,
 
-    "SDEP"
-    ,
+        "SDEP"
+        ,
 
-    "SDSC"
-    ,
+        "SDSC"
+        ,
 
-    "Senior Center Complaint"
-    ,
+        "Senior Center Complaint"
+        ,
 
-    "Sewer"
-    ,
+        "Sewer"
+        ,
 
-    "Sewer "
-    ,
+        "Sewer "
+        ,
 
-    "SG-51"
-    ,
+        "SG-51"
+        ,
 
-    "SG-71"
-    ,
+        "SG-71"
+        ,
 
-    "SG-98"
-    ,
+        "SG-98"
+        ,
 
-    "Sidewalk Condition"
-    ,
+        "Sidewalk Condition"
+        ,
 
-    "Smoking"
-    ,
+        "Smoking"
+        ,
 
-    "Snow"
-    ,
+        "Snow"
+        ,
 
-    "SNW"
-    ,
+        "SNW"
+        ,
 
-    "Special Enforcement"
-    ,
+        "Special Enforcement"
+        ,
 
-    "Special Natural Area District (SNAD)"
-    ,
+        "Special Natural Area District (SNAD)"
+        ,
 
-    "Special Projects Inspection Team (SPIT)"
-    ,
+        "Special Projects Inspection Team (SPIT)"
+        ,
 
-    "Sprinkler - Mechanical"
-    ,
+        "Sprinkler - Mechanical"
+        ,
 
-    "Squeegee"
-    ,
+        "Squeegee"
+        ,
 
-    "Stalled Sites"
-    ,
+        "Stalled Sites"
+        ,
 
-    "Standing Water"
-    ,
+        "Standing Water"
+        ,
 
-    "Standpipe - Mechanical"
-    ,
+        "Standpipe - Mechanical"
+        ,
 
-    "Street Condition"
-    ,
+        "Street Condition"
+        ,
 
-    "Street Light Condition"
-    ,
+        "Street Light Condition"
+        ,
 
-    "Street Sign - Damaged"
-    ,
+        "Street Sign - Damaged"
+        ,
 
-    "Street Sign - Dangling"
-    ,
+        "Street Sign - Dangling"
+        ,
 
-    "Street Sign - Missing"
-    ,
+        "Street Sign - Missing"
+        ,
 
-    "STRUCTURAL"
-    ,
+        "STRUCTURAL"
+        ,
 
-    "STSK"
-    ,
+        "STSK"
+        ,
 
-    "Summer Camp"
-    ,
+        "Summer Camp"
+        ,
 
-    "Sweeping/Inadequate"
-    ,
+        "Sweeping/Inadequate"
+        ,
 
-    "Sweeping/Missed"
-    ,
+        "Sweeping/Missed"
+        ,
 
-    "Sweeping/Missed-Inadequate"
-    ,
+        "Sweeping/Missed-Inadequate"
+        ,
 
-    "Tanning"
-    ,
+        "Tanning"
+        ,
 
-    "Tattooing"
-    ,
+        "Tattooing"
+        ,
 
-    "Taxi Complaint"
-    ,
+        "Taxi Complaint"
+        ,
 
-    "Taxi Compliment"
-    ,
+        "Taxi Compliment"
+        ,
 
-    "Taxi Report"
-    ,
+        "Taxi Report"
+        ,
 
-    "Teaching/Learning/Instruction"
-    ,
+        "Teaching/Learning/Instruction"
+        ,
 
-    "Traffic"
-    ,
+        "Traffic"
+        ,
 
-    "Traffic Signal Condition"
-    ,
+        "Traffic Signal Condition"
+        ,
 
-    "Trans Fat"
-    ,
+        "Trans Fat"
+        ,
 
-    "Transportation Provider Complaint"
-    ,
+        "Transportation Provider Complaint"
+        ,
 
-    "Trapping Pigeon"
-    ,
+        "Trapping Pigeon"
+        ,
 
-    "Tunnel Condition"
-    ,
+        "Tunnel Condition"
+        ,
 
-    "Unleashed Dog"
-    ,
+        "Unleashed Dog"
+        ,
 
-    "Unlicensed Dog"
-    ,
+        "Unlicensed Dog"
+        ,
 
-    "Unsanitary Animal Facility"
-    ,
+        "Unsanitary Animal Facility"
+        ,
 
-    "Unsanitary Animal Pvt Property"
-    ,
+        "Unsanitary Animal Pvt Property"
+        ,
 
-    "UNSANITARY CONDITION"
-    ,
+        "UNSANITARY CONDITION"
+        ,
 
-    "Unsanitary Pigeon Condition"
-    ,
+        "Unsanitary Pigeon Condition"
+        ,
 
-    "Urinating in Public"
-    ,
+        "Urinating in Public"
+        ,
 
-    "VACANT APARTMENT"
-    ,
+        "VACANT APARTMENT"
+        ,
 
-    "Vacant Lot"
-    ,
+        "Vacant Lot"
+        ,
 
-    "Vending"
-    ,
+        "Vending"
+        ,
 
-    "Violation of Park Rules"
-    ,
+        "Violation of Park Rules"
+        ,
 
-    "Water Conservation"
-    ,
+        "Water Conservation"
+        ,
 
-    "WATER LEAK"
-    ,
+        "WATER LEAK"
+        ,
 
-    "Water Quality"
-    ,
+        "Water Quality"
+        ,
 
-    "Water System"
-    ,
+        "Water System"
+        ,
 
-    "Water System "
-    ,
+        "Water System "
+        ,
 
-    "Window Guard"
-    ,
+        "Window Guard"
+        ,
 
-    "WLWP"
-    ,
+        "WLWP"
+        ,
 
-    "WNW"
-    ,
+        "WNW"
+        ,
 
-    "X-Ray Machine/Equipment"
+        "X-Ray Machine/Equipment"
 
     ]
 }
@@ -1399,35 +1276,10 @@ function getCBNumber(num){
     }else return num;
 }
 
-//Turns Socrata data into blob
-function getTableArray(data){
-    returnRows = [];
-
-    for(var i = 0; i < data.length; i++){
-        var newRow = {};
-
-        newRow.createdDate = new Date(data[i].created_date).toDateString();
-        newRow.complaintType = data[i].complaint_type;
-        newRow.agency = data[i].agency;
-        newRow.descriptor = data[i].descriptor;
-        newRow.incidentAddress = data[i].incident_address;
-        newRow.incidentZip = data[i].incident_zip;
-        newRow.borough = data[i].borough;
-        newRow.communityBoard = data[i].community_board;
-        newRow.status = data[i].status;
-
-        returnRows.push(newRow);
-    }
-
-    return returnRows;
-}
-
 //Fucking Socrata format
 function dateStringToWeirdFormat(date){
-    var returnDate = date.format("YYYY-MM-DD");
-    returnDate += "T00:00:00";
-
-    return returnDate;
+    console.log(date.toISOString());
+    return date.toISOString();
 }
 
 document.addEventListener("DOMContentLoaded", function () {
