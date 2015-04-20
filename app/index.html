@@ -14,6 +14,8 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="//cdn.datatables.net/1.10.4/css/jquery.dataTables.min.css">
 
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
@@ -180,6 +182,11 @@
                 </md-button>
             </div>
 
+            <div class="searchQueryContainer" layout="row" layout-align="start center">
+                <i class="fa fa-search fa-2x"></i>
+                <input type="text" ng-model="searchQuery" class="form-control searchQuery" placeholder="Search this page">
+            </div>
+
             <md-card id="tableCard" flex="74">
 
                 <div layout="row" layout-align="space-around center">
@@ -204,7 +211,7 @@
 
 
                         <tbody>
-                        <tr ng-repeat="row in resultRows">
+                        <tr ng-if="shouldShowRow(row)" ng-repeat="row in resultRows">
                             <td>{{row.createdDate | date : 'shortDate'}}</td>
                             <td>{{row.agency}}</td>
                             <td>{{row.complaintType}}</td>

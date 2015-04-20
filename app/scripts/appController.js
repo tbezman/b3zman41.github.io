@@ -60,6 +60,8 @@ angular.module("nycOpen", ["ngMaterial"]).controller("appController", ["$scope",
         $scope.dateSpanStart = "";
         $scope.dateSpanEnd = "";
 
+        $scope.searchQuery = "";
+
         $scope.boroughSelect = "";
         $scope.cbNumberSelect = "";
         $scope.agencySelect = "";
@@ -94,6 +96,33 @@ angular.module("nycOpen", ["ngMaterial"]).controller("appController", ["$scope",
         }
     }
 
+    $scope.shouldShowRow = function (row) {
+        console.log($scope.searchQuery);
+        $scope.searchQuery = $scope.searchQuery.toString();
+
+        if($scope.searchQuery) {
+            for (var dataKey in row) {
+                var data = row[dataKey];
+
+                if(data) {
+                    data = data.toString();
+
+                    var searchWords = $scope.searchQuery.split(" ");
+
+                    for (var searchWordKey in searchWords) {
+                        var searchWord = searchWords[searchWordKey];
+
+                        if (data.indexOf(searchWord) > -1 || searchWord.indexOf(data) > -1) return true;
+                    }
+                }
+            }
+
+            return false;
+        }
+
+        return true;
+    }
+
     //Constructs the url and then goes to the CSV link on Socrata
     $scope.exportData = function () {
         var url = ("http://data.cityofnewyork.us/resource/erm2-nwe9.csv" + constructURL("NOLIMIT"));
@@ -121,6 +150,8 @@ angular.module("nycOpen", ["ngMaterial"]).controller("appController", ["$scope",
 
         $scope.sortColumn = "created_date";
         $scope.sortDirection = "desc";
+
+        $scope.searchQuery = "";
 
         $scope.updateQuery();
     }
