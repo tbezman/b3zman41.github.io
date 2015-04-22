@@ -97,8 +97,7 @@ angular.module("nycOpen", ["ngMaterial"]).controller("appController", ["$scope",
     }
 
     $scope.shouldShowRow = function (row) {
-        console.log($scope.searchQuery);
-        $scope.searchQuery = $scope.searchQuery.toString();
+        /*$scope.searchQuery = $scope.searchQuery.toString();
 
         if($scope.searchQuery) {
             for (var dataKey in row) {
@@ -115,10 +114,10 @@ angular.module("nycOpen", ["ngMaterial"]).controller("appController", ["$scope",
                         if (data.indexOf(searchWord) > -1 || searchWord.indexOf(data) > -1) return true;
                     }
                 }
-            }
+            }*
 
             return false;
-        }
+        }*/
 
         return true;
     }
@@ -150,8 +149,6 @@ angular.module("nycOpen", ["ngMaterial"]).controller("appController", ["$scope",
 
         $scope.sortColumn = "created_date";
         $scope.sortDirection = "desc";
-
-        $scope.searchQuery = "";
 
         $scope.updateQuery();
     }
@@ -295,13 +292,12 @@ angular.module("nycOpen", ["ngMaterial"]).controller("appController", ["$scope",
         }
 
         if(order && $scope.sortColumn && $scope.sortDirection) {
-            if(conditionCounter > 0) {
-                parameters += "&";
-            }
-
             parameters += "$order=" + $scope.sortColumn + " " + $scope.sortDirection.toUpperCase() + "&";
         }
 
+        if(order && $scope.searchQuery) {
+            parameters += "$q=" + $scope.searchQuery + "&";
+        }
 
         if(conditionCounter > 0)
             parameters += where;

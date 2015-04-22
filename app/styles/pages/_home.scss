@@ -32,21 +32,17 @@
   height: calc(100% - 100px);
 }
 
-.searchQuery {
-  width: 400px !important;
-
-  margin-left: 20px;
-}
-
-.searchQueryContainer {
-  margin: 10px auto;
-}
-
 .pageHeader {
   background-color: #1A237E !important;
 
   > * {
     margin-left: 20px;
+  }
+}
+
+.searchQueryContainer {
+  i {
+    margin-right: 10px;
   }
 }
 
