@@ -38,6 +38,23 @@
   > * {
     margin-left: 20px;
   }
+
+  .iconButton{
+    margin: 20px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .githubButton {
+    background-color: grey !important;
+  }
+
+  .twitterButton {
+    background-color: dodgerblue !important;
+  }
 }
 
 .searchQueryContainer {
